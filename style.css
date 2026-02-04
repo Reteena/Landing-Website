@@ -80,17 +80,20 @@ body {
   opacity: 0.7;
 }
 
-/* Adjust header to account for banner */
+/* Header - full width liquid glass */
 .header {
+  position: fixed;
   top: 34px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-/* When banner is closed, move header back to top */
-.announcement-banner[style*="display: none"] ~ .frame .header,
-body:not(:has(.announcement-banner:not([style*="display: none"]))) .header {
+body.banner-closed .header {
   top: 0;
 }
-
 .frame {
   margin: 0 auto;
   max-width: 700px;
@@ -194,17 +197,6 @@ body:not(:has(.announcement-banner:not([style*="display: none"]))) .header {
   width: 100%;
   height: 100%;
   overflow: auto;
-}
-
-/* Header - full width liquid glass */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  z-index: 1000;
-  transition: all 0.3s ease;
 }
 
 .header-container {
@@ -352,6 +344,10 @@ body:not(:has(.announcement-banner:not([style*="display: none"]))) .header {
 /* Main content */
 main { 
   padding: 134px 48px 0 48px; 
+}
+
+body.banner-closed main {
+  padding-top: 100px;
 }
 
 .intro { 
@@ -698,10 +694,18 @@ html {
     top: 32px;
   }
 
+  body.banner-closed .header {
+    top: 0;
+  }
+
   main { 
     padding-left: 5vw; 
     padding-right: 5vw;
     padding-top: 132px;
+  }
+
+  body.banner-closed main {
+    padding-top: 100px;
   }
 
   .frame { 
