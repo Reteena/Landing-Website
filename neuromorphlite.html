@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -51,75 +51,95 @@
         
         <div class="blog-content">
           <div class="blog-meta">
-            <span class="blog-category">Neuroimaging & Reinforcement Learning</span>
-            <span class="blog-date">Project 05</span>
+            <span class="blog-index">[05]</span>
+            <span class="blog-category">NEUROIMAGING & REINFORCEMENT LEARNING</span>
           </div>
           
           <h1 class="blog-title">NeuroMorphLite-fMRI</h1>
           
-          <div class="tags small-tags" style="margin-bottom: 32px;">
+          <div class="tags small-tags" style="margin-bottom: 40px;">
             <span class="tag">neuroimaging</span>
             <span class="tag">morphology</span>
             <span class="tag">3D-analysis</span>
           </div>
 
-          <div class="blog-body">
-            <h2>Bridging Deep Learning and Reinforcement Learning</h2>
-            <p>NeuroMorphLite-fMRI represents a novel approach to fMRI-based Alzheimer's research by merging deep learning reconstruction with reinforcement learning optimization. This hybrid approach tackles two critical challenges simultaneously: producing high-quality brain reconstructions and identifying the most diagnostically relevant brain regions.</p>
+          <div class="blog-lead">
+            Hybrid deep learning and reinforcement learning framework for high-fidelity fMRI reconstruction with low computational demands.
+          </div>
 
-            <h2>Low Computational Demands</h2>
-            <p>Despite its sophisticated architecture, NeuroMorphLite-fMRI is designed with computational efficiency in mind. This makes advanced neuroimaging analysis accessible to researchers and clinicians who may not have access to high-performance computing clusters, democratizing access to cutting-edge diagnostic tools.</p>
-
-            <h2>Built on Robust Datasets</h2>
-            <p>The framework is built and validated using two of the most comprehensive Alzheimer's neuroimaging datasets available:</p>
-
-            <ul>
-              <li><strong>ADNI (Alzheimer's Disease Neuroimaging Initiative):</strong> A longitudinal study providing extensive multi-modal imaging and clinical data.</li>
-              <li><strong>OASIS (Open Access Series of Imaging Studies):</strong> A freely available collection of MRI datasets across various stages of cognitive decline.</li>
-            </ul>
-
-            <p>Training on these diverse, high-quality datasets ensures the framework's reliability across different patient populations and imaging protocols.</p>
-
-            <h2>Dual Backbone Architecture</h2>
-            <p>NeuroMorphLite-fMRI employs both CNN (Convolutional Neural Network) and Transformer backbones to achieve high-fidelity brain reconstruction:</p>
-
-            <ul>
-              <li><strong>CNN backbone:</strong> Excels at capturing local spatial patterns and anatomical structures in the 3D brain volume.</li>
-              <li><strong>Transformer backbone:</strong> Captures long-range dependencies and global context across different brain regions.</li>
-            </ul>
-
-            <p>This combination ensures that both fine-grained anatomical details and broader structural patterns are preserved in the reconstructions.</p>
-
-            <h2>Reinforcement Learning Optimization</h2>
-            <p>The reinforcement learning component serves a dual purpose:</p>
-
-            <h3>1. Regularization Optimization</h3>
-            <p>The RL agent learns optimal regularization strategies during reconstruction, balancing image quality with computational efficiency. Rather than using fixed hyperparameters, the system adaptively adjusts its approach based on the specific characteristics of each scan.</p>
-
-            <h3>2. Region Importance Discovery</h3>
-            <p>Perhaps most importantly, the RL agent identifies which brain regions are most critical for Alzheimer's diagnosis. It has successfully highlighted key structures like the hippocampus—known to be among the earliest and most severely affected regions in Alzheimer's disease—without being explicitly programmed to look for them.</p>
-
-            <h2>Clinical Relevance</h2>
-            <p>By automatically identifying diagnostically important regions, NeuroMorphLite-fMRI can:</p>
-
-            <ul>
-              <li>Guide radiologists to focus on the most relevant areas during image review</li>
-              <li>Provide quantitative measures of atrophy in critical regions</li>
-              <li>Track disease progression by monitoring changes in identified regions over time</li>
-              <li>Support early detection by highlighting subtle changes in key structures</li>
-            </ul>
-
-            <h2>Balancing Multiple Objectives</h2>
-            <p>The unique strength of NeuroMorphLite-fMRI lies in its ability to optimize for both image reconstruction quality and diagnostic accuracy simultaneously. Traditional approaches often treat these as separate problems, but our integrated framework ensures that the reconstruction process itself is guided by diagnostic relevance.</p>
-
-            <h2>Future Directions</h2>
-            <p>We're continuing to refine the framework, exploring applications beyond Alzheimer's disease to other neurodegenerative conditions and investigating how the learned importance maps might provide insights into disease mechanisms and progression patterns.</p>
-
-            <div class="blog-cta">
-              <a href="index.html" class="button-11 secondary">
-                ← Back to Projects
-              </a>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Dual Backbone</h3>
+              <p>CNN captures local spatial patterns while Transformer models long-range dependencies across brain regions.</p>
             </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>RL Optimization</h3>
+              <p>Reinforcement agent adaptively optimizes regularization strategies for each scan's unique characteristics.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3>Region Discovery</h3>
+              <p>Automatically identifies diagnostically critical regions like hippocampus without explicit programming.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Robust Datasets</h3>
+              <p>Trained on ADNI and OASIS datasets ensuring reliability across different patient populations.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <h3>Low Compute</h3>
+              <p>Efficient architecture enables advanced analysis without high-performance computing clusters.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>Dual Objectives</h3>
+              <p>Optimizes for both reconstruction quality and diagnostic accuracy simultaneously.</p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h2 class="section-title">Clinical Applications</h2>
+            <div class="impact-stats">
+              <div class="stat-card">
+                <div class="stat-value">Guided Review</div>
+                <div class="stat-label">Directs radiologists to critical regions</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Progression Tracking</div>
+                <div class="stat-label">Monitors changes in key structures over time</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Early Detection</div>
+                <div class="stat-label">Highlights subtle changes in critical areas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-cta-section">
+            <a href="index.html" class="cta-button secondary">
+              <i class="fas fa-arrow-left"></i>
+              Back to Projects
+            </a>
           </div>
         </div>
       </article>
@@ -138,6 +158,23 @@
       } else {
         header.classList.remove('scrolled');
       }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .stat-card').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
