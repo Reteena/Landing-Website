@@ -318,20 +318,23 @@
         banner.style.display = 'none';
         document.body.classList.add('banner-closed');
         // Save to localStorage so it stays closed
-        localStorage.setItem('neuripsAnnouncementClosed', 'true');
+        try {
+          localStorage.setItem('neuripsAnnouncementClosed', 'true');
+        } catch(e) {
+          console.log('localStorage not available');
+        }
       }, 300);
     }
 
     // Check if banner was previously closed
-    window.addEventListener('DOMContentLoaded', function() {
-      const banner = document.getElementById('neuripsAnnouncement');
+    try {
       if (localStorage.getItem('neuripsAnnouncementClosed') === 'true') {
-        banner.style.display = 'none';
+        document.getElementById('neuripsAnnouncement').style.display = 'none';
         document.body.classList.add('banner-closed');
-      } else {
-        banner.style.display = 'block';
       }
-    });
+    } catch(e) {
+      // localStorage not available, banner will show
+    }
 
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
