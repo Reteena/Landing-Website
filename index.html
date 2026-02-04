@@ -323,8 +323,11 @@
 
     // Check if banner was previously closed
     window.addEventListener('DOMContentLoaded', function() {
+      const banner = document.getElementById('neuripsAnnouncement');
       if (localStorage.getItem('neuripsAnnouncementClosed') === 'true') {
-        document.getElementById('neuripsAnnouncement').style.display = 'none';
+        banner.style.display = 'none';
+      } else {
+        banner.style.display = 'block';
       }
     });
 
