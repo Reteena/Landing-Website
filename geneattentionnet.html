@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -51,54 +51,99 @@
         
         <div class="blog-content">
           <div class="blog-meta">
-            <span class="blog-category">Genomics & Machine Learning</span>
-            <span class="blog-date">Project 03</span>
+            <span class="blog-index">[03]</span>
+            <span class="blog-category">GENOMICS & MACHINE LEARNING</span>
           </div>
           
           <h1 class="blog-title">GeneAttentionNet</h1>
           
-          <div class="tags small-tags" style="margin-bottom: 32px;">
+          <div class="tags small-tags" style="margin-bottom: 40px;">
             <span class="tag">genomics</span>
             <span class="tag">attention-mechanism</span>
             <span class="tag">ML</span>
           </div>
 
-          <div class="blog-body">
-            <h2>Rethinking Gene Analysis</h2>
-            <p>Traditional machine learning approaches to genomic data treat genes as isolated, independent features. However, this fundamentally misrepresents how biological systems actually work. Genes interact in complex networks, with relationships and dependencies that are crucial for understanding disease mechanisms.</p>
+          <div class="blog-lead">
+            Attention-based neural network that models gene interactions for Alzheimer's classification, revealing biological relationships traditional models miss.
+          </div>
 
-            <h2>The Attention Mechanism Advantage</h2>
-            <p>GeneAttentionNet addresses this limitation by employing attention mechanisms—a technique borrowed from natural language processing—to classify Alzheimer's disease using high-dimensional gene expression data. Just as attention mechanisms help language models understand relationships between words in a sentence, they help our model uncover meaningful relationships between genes.</p>
-
-            <p>This approach allows the model to dynamically focus on the most relevant gene interactions for each prediction, mimicking how biological systems actually function through interconnected pathways and regulatory networks.</p>
-
-            <h2>Exceptional Performance</h2>
-            <p>The results speak for themselves: GeneAttentionNet outperformed standard multilayer perceptrons by nearly 8% and Random Forests by an impressive 38%. This significant improvement demonstrates the value of modeling gene interactions rather than treating them as isolated features.</p>
-
-            <h2>Technical Innovation</h2>
-            <p>The model architecture is specifically designed to handle the unique challenges of genomic data:</p>
-            
-            <ul>
-              <li><strong>High dimensionality:</strong> Genomic datasets often have thousands of features (genes) but relatively few samples. Our attention mechanism helps identify the most informative patterns without overfitting.</li>
-              <li><strong>Gene interactions:</strong> The self-attention layers capture both direct and indirect relationships between genes, revealing regulatory networks and pathway interactions.</li>
-              <li><strong>Interpretability:</strong> Unlike black-box models, attention weights provide insights into which gene relationships are most important for classification, offering potential biological insights.</li>
-            </ul>
-
-            <h2>Biological Relevance</h2>
-            <p>By modeling gene interactions, GeneAttentionNet doesn't just achieve better classification—it potentially offers insights into the biological mechanisms underlying Alzheimer's disease. The attention patterns learned by the model could highlight previously unknown gene interactions or validate suspected regulatory relationships.</p>
-
-            <h2>Future Applications</h2>
-            <p>While developed for Alzheimer's disease classification, the GeneAttentionNet architecture could be adapted for other complex diseases where gene expression patterns play a crucial role. We're exploring applications in other neurodegenerative conditions and various forms of cancer.</p>
-
-            <div class="blog-cta">
-              <a href="https://docs.google.com/presentation/d/1XP6hqUh8h7uiNXx7hgapT3WKyfc5aCdU6IMVSYBNAeU/edit?slide=id.p#slide=id.p" target="_blank" class="button-11">
-                View Presentation
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              </a>
-              <a href="index.html" class="button-11 secondary">
-                ← Back to Projects
-              </a>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <h3>Gene Interaction Modeling</h3>
+              <p>Captures relationships between genes just like biological systems, moving beyond treating genes as isolated features.</p>
             </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Superior Performance</h3>
+              <p>Outperformed MLPs by 8% and Random Forests by 38%, demonstrating the value of modeling gene relationships.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Attention Mechanism</h3>
+              <p>Self-attention layers reveal which gene relationships are most important for classification and diagnosis.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>High-Dimensional Data</h3>
+              <p>Designed to handle thousands of gene features while identifying the most informative patterns.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3>Interpretable Results</h3>
+              <p>Attention weights provide biological insights into gene interactions and regulatory networks.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h3>Biological Relevance</h3>
+              <p>Model architecture mirrors actual biological systems with interconnected pathways and regulations.</p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h2 class="section-title">Research Impact</h2>
+            <div class="impact-stats">
+              <div class="stat-card">
+                <div class="stat-value">+38%</div>
+                <div class="stat-label">Better than Random Forest models</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">+8%</div>
+                <div class="stat-label">Better than standard MLPs</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Interpretable</div>
+                <div class="stat-label">Reveals gene interaction patterns</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-cta-section">
+            <a href="https://docs.google.com/presentation/d/1XP6hqUh8h7uiNXx7hgapT3WKyfc5aCdU6IMVSYBNAeU/edit?slide=id.p#slide=id.p" target="_blank" class="cta-button primary">
+              <i class="fas fa-presentation"></i>
+              View Presentation
+            </a>
+            <a href="index.html" class="cta-button secondary">
+              <i class="fas fa-arrow-left"></i>
+              Back to Projects
+            </a>
           </div>
         </div>
       </article>
@@ -117,6 +162,23 @@
       } else {
         header.classList.remove('scrolled');
       }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .stat-card').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
