@@ -1,7 +1,7 @@
 /* Base styles */
 body {
   margin: 40px 0 0 0;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
   background: #fff;
   color: #111;
   overflow-x: hidden;
@@ -19,7 +19,7 @@ body {
   z-index: 10001;
   padding: 10px 20px;
   font-size: 14px;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Manrope', Arial, sans-serif;
 }
 
 .announcement-content {
@@ -206,147 +206,6 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #f5f5dc 0%, #e8e8d8 100%);
-}
-
-/* Bubbles Container */
-.bubbles-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Individual Bubble Styles - Static by default */
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 1;
-  overflow: hidden;
-  box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.3);
-  pointer-events: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.bubble:hover {
-  transform: scale(1.05);
-}
-
-.bubble-inner {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Bubble positions */
-.bubble-1 {
-  top: 15%;
-  left: 8%;
-  width: 200px;
-  height: 200px;
-}
-
-.bubble-2 {
-  top: 40%;
-  left: 22%;
-  width: 140px;
-  height: 140px;
-}
-
-.bubble-3 {
-  top: 32%;
-  left: 55%;
-  width: 110px;
-  height: 110px;
-}
-
-.bubble-4 {
-  top: 18%;
-  right: 15%;
-  width: 170px;
-  height: 170px;
-}
-
-.bubble-5 {
-  top: 25%;
-  right: 25%;
-  width: 95px;
-  height: 95px;
-}
-
-/* Expansion animation - Only when .expanding class is added */
-.bubble.expanding {
-  animation: bubbleExpandClick 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  pointer-events: none;
-  z-index: 100;
-}
-
-.bubble.expanding .bubble-inner {
-  animation: innerZoomClick 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-/* Click-triggered expansion with full opacity */
-@keyframes bubbleExpandClick {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
-    box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.3);
-  }
-  5% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  15% {
-    opacity: 1;
-    transform: scale(2);
-    filter: blur(1px);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(6);
-    filter: blur(4px);
-    box-shadow: 0 0 120px 60px rgba(255, 255, 255, 0.2);
-  }
-  50% {
-    opacity: 0.95;
-    transform: scale(15);
-    filter: blur(15px);
-    box-shadow: 0 0 200px 100px rgba(255, 255, 255, 0.1);
-  }
-  70% {
-    opacity: 0.7;
-    transform: scale(28);
-    filter: blur(30px);
-    box-shadow: none;
-  }
-  85% {
-    opacity: 0.3;
-    transform: scale(40);
-    filter: blur(45px);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(50);
-    filter: blur(60px);
-  }
-}
-
-/* Inner image zoom during expansion */
-@keyframes innerZoomClick {
-  0%, 10% {
-    transform: scale(1);
-    filter: blur(0px);
-  }
-  100% {
-    transform: scale(1.8);
-    filter: blur(10px);
-  }
 }
 
 .hero-title {
@@ -357,9 +216,6 @@ body {
   text-align: center;
   margin: 0;
   color: #111;
-  position: relative;
-  z-index: 10;
-  text-shadow: 0 2px 20px rgba(255, 255, 255, 0.8);
 }
 
 /* Content Section - Appears on scroll */
@@ -384,7 +240,6 @@ main {
 }
 
 .subtitle {
-  font-family: 'Inria Serif', serif;
   font-size: 18px;
   margin: 0 0 32px 0;
   color: #222;
@@ -531,7 +386,7 @@ main {
 .tag {
   font-size: 15px;
   color: #7c7c7c;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
   background: transparent;
   border: 1px solid #969696;
   border-radius: 18px;
@@ -576,7 +431,7 @@ main {
   background: none;
   border: none;
   color: #3D3D3D;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
@@ -656,13 +511,6 @@ html {
   .hero-title {
     font-size: clamp(28px, 8vw, 48px);
   }
-
-  /* Adjust bubble sizes for mobile */
-  .bubble-1 { width: 140px; height: 140px; top: 18%; left: 5%; }
-  .bubble-2 { width: 95px; height: 95px; top: 42%; left: 18%; }
-  .bubble-3 { width: 80px; height: 80px; top: 35%; right: 18%; }
-  .bubble-4 { width: 120px; height: 120px; top: 22%; right: 8%; }
-  .bubble-5 { width: 70px; height: 70px; top: 28%; right: 28%; }
 
   .content-section {
     padding: 0 5vw 0 5vw;
