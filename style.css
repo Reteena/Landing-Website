@@ -6,6 +6,103 @@ body {
   color: #111;
 }
 
+/* NeurIPS Announcement Banner */
+.announcement-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  z-index: 10001;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.announcement-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+
+.announcement-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.announcement-text strong {
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.announcement-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.announcement-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.announcement-close svg {
+  color: #fff;
+}
+
+/* Adjust header to account for banner */
+.header {
+  top: 47px;
+}
+
+/* When banner is closed, move header back to top */
+.announcement-banner[style*="display: none"] ~ .frame .header,
+body:not(:has(.announcement-banner:not([style*="display: none"]))) .header {
+  top: 0;
+}
+
 .frame {
   margin: 0 auto;
   max-width: 700px;
@@ -266,7 +363,7 @@ body {
 
 /* Main content */
 main { 
-  padding: 100px 48px 0 48px; 
+  padding: 147px 48px 0 48px; 
 }
 
 .intro { 
@@ -597,6 +694,24 @@ html {
 
 /* Mobile responsive */
 @media screen and (max-width: 780px) {
+  .announcement-text {
+    font-size: 13px;
+  }
+
+  .announcement-content {
+    padding: 12px 16px;
+  }
+
+  .header {
+    top: 45px;
+  }
+
+  main { 
+    padding-left: 5vw; 
+    padding-right: 5vw;
+    padding-top: 145px;
+  }
+
   .frame { 
     margin: 0; 
     max-width: none; 
@@ -612,12 +727,6 @@ html {
   .intro h1 {
     white-space: normal;
     font-size: 32px;
-  }
-  
-  main { 
-    padding-left: 5vw; 
-    padding-right: 5vw;
-    padding-top: 100px;
   }
   
   .footer-section {
