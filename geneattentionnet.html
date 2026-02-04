@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeneAttentionNet - Reteena</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg style="display:none;">
+    <filter id="distortion">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <div class="frame">
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="glass-container">
+          <div class="glass-effect-backdrop"></div>
+          <div class="glass-effect top"></div>
+          <div class="glass-effect bottom"></div>
+          <div class="glass-effect left"></div>
+          <div class="glass-effect right"></div>
+        </div>
+        <div class="header-content">
+          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <div style="flex: 1;"></div>
+          <a href="https://www.linkedin.com/company/reteena" target="_blank" class="linkedin-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Reteena" target="_blank" class="github-link" aria-label="GitHub">
+            <svg height="15" viewBox="0 0 16 16" fill="#222" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68.003 1.37.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <main class="blog-main">
+      <article class="blog-article">
+        <div class="blog-header-image">
+          <img src="image3.png" alt="GeneAttentionNet">
+        </div>
+        
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-category">Genomics & Machine Learning</span>
+            <span class="blog-date">Project 03</span>
+          </div>
+          
+          <h1 class="blog-title">GeneAttentionNet</h1>
+          
+          <div class="tags small-tags" style="margin-bottom: 32px;">
+            <span class="tag">genomics</span>
+            <span class="tag">attention-mechanism</span>
+            <span class="tag">ML</span>
+          </div>
+
+          <div class="blog-body">
+            <h2>Rethinking Gene Analysis</h2>
+            <p>Traditional machine learning approaches to genomic data treat genes as isolated, independent features. However, this fundamentally misrepresents how biological systems actually work. Genes interact in complex networks, with relationships and dependencies that are crucial for understanding disease mechanisms.</p>
+
+            <h2>The Attention Mechanism Advantage</h2>
+            <p>GeneAttentionNet addresses this limitation by employing attention mechanisms—a technique borrowed from natural language processing—to classify Alzheimer's disease using high-dimensional gene expression data. Just as attention mechanisms help language models understand relationships between words in a sentence, they help our model uncover meaningful relationships between genes.</p>
+
+            <p>This approach allows the model to dynamically focus on the most relevant gene interactions for each prediction, mimicking how biological systems actually function through interconnected pathways and regulatory networks.</p>
+
+            <h2>Exceptional Performance</h2>
+            <p>The results speak for themselves: GeneAttentionNet outperformed standard multilayer perceptrons by nearly 8% and Random Forests by an impressive 38%. This significant improvement demonstrates the value of modeling gene interactions rather than treating them as isolated features.</p>
+
+            <h2>Technical Innovation</h2>
+            <p>The model architecture is specifically designed to handle the unique challenges of genomic data:</p>
+            
+            <ul>
+              <li><strong>High dimensionality:</strong> Genomic datasets often have thousands of features (genes) but relatively few samples. Our attention mechanism helps identify the most informative patterns without overfitting.</li>
+              <li><strong>Gene interactions:</strong> The self-attention layers capture both direct and indirect relationships between genes, revealing regulatory networks and pathway interactions.</li>
+              <li><strong>Interpretability:</strong> Unlike black-box models, attention weights provide insights into which gene relationships are most important for classification, offering potential biological insights.</li>
+            </ul>
+
+            <h2>Biological Relevance</h2>
+            <p>By modeling gene interactions, GeneAttentionNet doesn't just achieve better classification—it potentially offers insights into the biological mechanisms underlying Alzheimer's disease. The attention patterns learned by the model could highlight previously unknown gene interactions or validate suspected regulatory relationships.</p>
+
+            <h2>Future Applications</h2>
+            <p>While developed for Alzheimer's disease classification, the GeneAttentionNet architecture could be adapted for other complex diseases where gene expression patterns play a crucial role. We're exploring applications in other neurodegenerative conditions and various forms of cancer.</p>
+
+            <div class="blog-cta">
+              <a href="https://docs.google.com/presentation/d/1XP6hqUh8h7uiNXx7hgapT3WKyfc5aCdU6IMVSYBNAeU/edit?slide=id.p#slide=id.p" target="_blank" class="button-11">
+                View Presentation
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="index.html" class="button-11 secondary">
+                ← Back to Projects
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    
+    <div class="footer-section">
+      <img src="footer.png" alt="Reteena footer" class="footer-image">
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
