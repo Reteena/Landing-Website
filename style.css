@@ -206,6 +206,7 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #f5f5dc 0%, #e8e8d8 100%);
 }
 
 /* Bubbles Container */
@@ -219,92 +220,132 @@ body {
   z-index: 0;
 }
 
-/* Individual Bubble Styles */
+/* Individual Bubble Styles - Static by default */
 .bubble {
   position: absolute;
   border-radius: 50%;
-  opacity: 0;
-  filter: blur(0px);
-  background-size: cover;
-  background-position: center;
-  animation: bubbleExpand 8s ease-out forwards;
+  opacity: 1;
+  overflow: hidden;
+  box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.3);
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Bubble positions inspired by the reference images */
+.bubble:hover {
+  transform: scale(1.05);
+}
+
+.bubble-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Bubble positions */
 .bubble-1 {
   top: 15%;
   left: 8%;
-  width: 180px;
-  height: 180px;
-  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop'); /* Forest/nature */
-  animation-delay: 0.2s;
+  width: 200px;
+  height: 200px;
 }
 
 .bubble-2 {
-  top: 35%;
-  left: 25%;
-  width: 120px;
-  height: 120px;
-  background-image: url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400&h=400&fit=crop'); /* Water/abstract */
-  animation-delay: 0.6s;
+  top: 40%;
+  left: 22%;
+  width: 140px;
+  height: 140px;
 }
 
 .bubble-3 {
-  top: 30%;
-  left: 60%;
-  width: 100px;
-  height: 100px;
-  background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=400&fit=crop'); /* Nature scene */
-  animation-delay: 1s;
+  top: 32%;
+  left: 55%;
+  width: 110px;
+  height: 110px;
 }
 
 .bubble-4 {
   top: 18%;
-  right: 12%;
-  width: 150px;
-  height: 150px;
-  background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?w=400&h=400&fit=crop'); /* Green nature */
-  animation-delay: 1.4s;
+  right: 15%;
+  width: 170px;
+  height: 170px;
 }
 
 .bubble-5 {
-  top: 22%;
-  right: 22%;
-  width: 80px;
-  height: 80px;
-  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=400&fit=crop'); /* Landscape */
-  animation-delay: 1.8s;
+  top: 25%;
+  right: 25%;
+  width: 95px;
+  height: 95px;
 }
 
-/* Bubble Expansion Animation - Dreamy fade and natural growth */
-@keyframes bubbleExpand {
+/* Expansion animation - Only when .expanding class is added */
+.bubble.expanding {
+  animation: bubbleExpandClick 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.bubble.expanding .bubble-inner {
+  animation: innerZoomClick 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Click-triggered expansion with full opacity */
+@keyframes bubbleExpandClick {
   0% {
-    opacity: 0;
-    transform: scale(0);
-    filter: blur(0px);
-  }
-  10% {
-    opacity: 0.7;
+    opacity: 1;
     transform: scale(1);
     filter: blur(0px);
+    box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.3);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  15% {
+    opacity: 1;
+    transform: scale(2);
+    filter: blur(1px);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(6);
+    filter: blur(4px);
+    box-shadow: 0 0 120px 60px rgba(255, 255, 255, 0.2);
   }
   50% {
-    opacity: 0.5;
-    transform: scale(8);
-    filter: blur(3px);
-    border-radius: 50%;
+    opacity: 0.95;
+    transform: scale(15);
+    filter: blur(15px);
+    box-shadow: 0 0 200px 100px rgba(255, 255, 255, 0.1);
   }
-  80% {
+  70% {
+    opacity: 0.7;
+    transform: scale(28);
+    filter: blur(30px);
+    box-shadow: none;
+  }
+  85% {
     opacity: 0.3;
-    transform: scale(20);
-    filter: blur(8px);
-    border-radius: 30%;
+    transform: scale(40);
+    filter: blur(45px);
   }
   100% {
     opacity: 0;
-    transform: scale(35);
-    filter: blur(15px);
-    border-radius: 0%;
+    transform: scale(50);
+    filter: blur(60px);
+  }
+}
+
+/* Inner image zoom during expansion */
+@keyframes innerZoomClick {
+  0%, 10% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    transform: scale(1.8);
+    filter: blur(10px);
   }
 }
 
@@ -318,6 +359,7 @@ body {
   color: #111;
   position: relative;
   z-index: 10;
+  text-shadow: 0 2px 20px rgba(255, 255, 255, 0.8);
 }
 
 /* Content Section - Appears on scroll */
@@ -616,11 +658,11 @@ html {
   }
 
   /* Adjust bubble sizes for mobile */
-  .bubble-1 { width: 120px; height: 120px; top: 20%; left: 5%; }
-  .bubble-2 { width: 80px; height: 80px; top: 40%; left: 20%; }
-  .bubble-3 { width: 70px; height: 70px; top: 35%; right: 15%; }
-  .bubble-4 { width: 100px; height: 100px; top: 25%; right: 8%; }
-  .bubble-5 { width: 60px; height: 60px; top: 30%; right: 30%; }
+  .bubble-1 { width: 140px; height: 140px; top: 18%; left: 5%; }
+  .bubble-2 { width: 95px; height: 95px; top: 42%; left: 18%; }
+  .bubble-3 { width: 80px; height: 80px; top: 35%; right: 18%; }
+  .bubble-4 { width: 120px; height: 120px; top: 22%; right: 8%; }
+  .bubble-5 { width: 70px; height: 70px; top: 28%; right: 28%; }
 
   .content-section {
     padding: 0 5vw 0 5vw;
