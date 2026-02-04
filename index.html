@@ -10,26 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin-top: 40px;">
-  <!-- NeurIPS Banner - Simple inline approach -->
-  <div style="position: fixed; top: 0; left: 0; right: 0; width: 100%; background: #000; color: #fff; z-index: 99999; padding: 10px 20px; font-size: 14px; font-family: 'Manrope', Arial, sans-serif; display: flex; align-items: center; justify-content: center;">
-    <span style="display: inline-block;">We're excited to announce our paper has been published at NeurIPS 2025</span>
-    <button onclick="this.parentElement.remove(); document.body.style.marginTop='0'; document.getElementById('header').style.top='0';" style="margin-left: 12px; background: none; border: none; color: #fff; font-size: 16px; cursor: pointer; padding: 0; line-height: 1; opacity: 0.7; transition: opacity 0.2s; display: inline-block;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">×</button>
+<body>
+  <!-- NeurIPS Banner -->
+  <div class="neurips-banner" id="neurips-banner">
+    <div class="announcement-content">
+      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+    </div>
   </div>
 
-  <svg style="display:none;">
-    <filter id="distortion">
-      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
-      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </svg>
-
   <div class="frame">
-    <header id="header" class="header" style="top: 40px;">
+    <header id="header" class="header">
       <div class="header-container">
         <div class="glass-container">
           <div class="glass-effect-backdrop"></div>
@@ -40,183 +35,177 @@
         </div>
         <div class="header-content">
           <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
-          <div style="flex: 1;"></div>
-          <a href="https://www.linkedin.com/company/reteena" target="_blank" class="linkedin-link" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/Reteena" target="_blank" class="github-link" aria-label="GitHub">
-            <svg height="15" viewBox="0 0 16 16" fill="#222" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68.003 1.37.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-          </a>
+          <div class="header-spacer"></div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/reteena" target="_blank" class="linkedin-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Reteena" target="_blank" class="github-link" aria-label="GitHub">
+              <svg height="15" viewBox="0 0 16 16" fill="#222" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68.003 1.37.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </a>
+          </div>
         </div>
       </div>
     </header>
     
     <main>
-      <section class="intro">
-        <h1>It's time to <span class="rethink-highlight">rethink</span> how we help patients</h1>
-        <p class="subtitle">Reteena is an applied ai lab focused on creating human-friendly<br>solutions that enable more accessible alzheimer's diagnosis and therapy</p>
-        
-        <div class="supports-section">
-          <span class="supports-label">supports from</span>
-          <div class="supports-scroll-container">
-            <div class="supports-scroll">
-              <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
-              <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
-              <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
-              <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
+      <!-- Hero Section - Visible on Load -->
+      <section class="hero-section">
+        <h1 class="hero-title">Healthy Longevity with<br>Dignity and Identity</h1>
+      </section>
+      
+      <!-- Content Section - Visible on Scroll -->
+      <section class="content-section">
+        <section class="intro">
+          <p class="subtitle">Reteena is an applied ai lab focused on creating human-friendly<br>solutions that enable more accessible alzheimer's diagnosis and therapy</p>
+          
+          <div class="supports-section">
+            <span class="supports-label">supports from</span>
+            <div class="supports-scroll-container">
+              <div class="supports-scroll">
+                <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
+                <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
+                <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
+                <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      
-      <hr class="divider" />
-      
-      <section class="project">
-        <span class="project-index">01</span>
-        <div class="project-header">
-          <span class="project-title">Remembrance</span>
-          <div class="project-buttons">
-            <a href="remembrance.html" class="button-11">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        </section>
+        
+        <hr class="divider" />
+        
+        <section class="project">
+          <span class="project-index">01</span>
+          <div class="project-header">
+            <span class="project-title">Remembrance</span>
           </div>
-        </div>
-        <img src="image1.png" alt="Remembrance project illustration">
-        <div class="tags small-tags">
-          <span class="tag">context-aware</span>
-          <span class="tag">emotionally-intelligent</span>
-          <span class="tag">reminiscence therapy</span>
-        </div>
-        <div class="desc justified collapsed" data-project="1">
-          Remembrance is an emotionally intelligent, context-aware LLM-based memory assistant for Alzheimer's patients. It features a user interface similar to Obsidian and delivers reminiscence therapy in a non-intrusive manner. The system preserves core memories by extracting data from conversations using advanced language models.
-        </div>
-        <button class="expand-btn" onclick="toggleExpand(1)">
-          Expand
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-      </section>
-      
-      <hr class="divider" />
-      
-      <section class="project">
-        <span class="project-index">02</span>
-        <div class="project-header">
-          <span class="project-title">Low Field MRI Framework</span>
-          <div class="project-buttons">
-            <a href="low-field-mri.html" class="button-11">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+          <img src="image1.png" alt="Remembrance project illustration">
+          <div class="tags small-tags">
+            <span class="tag">context-aware</span>
+            <span class="tag">emotionally-intelligent</span>
+            <span class="tag">reminiscence therapy</span>
           </div>
-        </div>
-        <img src="image2.png" alt="Clarity Open Source project illustration">
-        <div class="tags small-tags">    
-          <span class="tag">deep-learning</span>
-          <span class="tag">image-segmentation</span>
-          <span class="tag">open-source</span>
-        </div>
-        <div class="desc justified collapsed" data-project="2">
-          Clarity is a deep learning framework that enhances low-field MRI scans for segmenting brain regions linked to Alzheimer's Disease. It achieved 96% accuracy in automatic AD diagnosis using volumetric data and ensemble ML models. This approach offers a cost-effective, faster alternative to traditional MRI for early AD detection.
-        </div>
-        <button class="expand-btn" onclick="toggleExpand(2)">
-          Expand
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-      </section>
+          <div class="desc justified collapsed" data-project="1">
+            Remembrance is an emotionally intelligent, context-aware LLM-based memory assistant for Alzheimer's patients. It features a user interface similar to Obsidian and delivers reminiscence therapy in a non-intrusive manner. The system preserves core memories by extracting data from conversations using advanced language models.
+          </div>
+          <button class="expand-btn" onclick="toggleExpand(1)">
+            Expand
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </section>
+        
+        <hr class="divider" />
+        
+        <section class="project">
+          <span class="project-index">02</span>
+          <div class="project-header">
+            <span class="project-title">Low Field MRI Framework</span>
+          </div>
+          <img src="image2.png" alt="Clarity Open Source project illustration">
+          <div class="tags small-tags">    
+            <span class="tag">deep-learning</span>
+            <span class="tag">image-segmentation</span>
+            <span class="tag">open-source</span>
+          </div>
+          <div class="desc justified collapsed" data-project="2">
+            Clarity is a deep learning framework that enhances low-field MRI scans for segmenting brain regions linked to Alzheimer's Disease. It achieved 96% accuracy in automatic AD diagnosis using volumetric data and ensemble ML models. This approach offers a cost-effective, faster alternative to traditional MRI for early AD detection.
+          </div>
+          <button class="expand-btn" onclick="toggleExpand(2)">
+            Expand
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </section>
 
-      <hr class="divider" />
-      
-      <section class="project">
-        <span class="project-index">03</span>
-        <div class="project-header">
-          <span class="project-title">GeneAttentionNet</span>
-          <div class="project-buttons">
-            <a href="geneattentionnet.html" class="button-11">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <hr class="divider" />
+        
+        <section class="project">
+          <span class="project-index">03</span>
+          <div class="project-header">
+            <span class="project-title">GeneAttentionNet</span>
           </div>
-        </div>
-        <img src="image3.png" alt="GeneAttentionNet project illustration">
-        <div class="tags small-tags">
-          <span class="tag">genomics</span>
-          <span class="tag">attention-mechanism</span>
-          <span class="tag">ML</span>
-        </div>
-        <div class="desc justified collapsed" data-project="3">
-          GeneAttentionNet classifies Alzheimer's disease using high-dimensional gene expression data with attention mechanisms to uncover meaningful gene relationships. Unlike traditional models treating genes as isolated features, it mimics biological system interactions. The model outperformed standard multilayer perceptrons by nearly 8% and Random Forests by 38%.
-        </div>
-        <button class="expand-btn" onclick="toggleExpand(3)">
-          Expand
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-      </section>
-      
-      <hr class="divider" />
-      
-      <section class="project">
-        <span class="project-index">04</span>
-        <div class="project-header">
-          <span class="project-title">SALSA</span>
-          <div class="project-buttons">
-            <a href="salsa.html" class="button-11">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+          <img src="image3.png" alt="GeneAttentionNet project illustration">
+          <div class="tags small-tags">
+            <span class="tag">genomics</span>
+            <span class="tag">attention-mechanism</span>
+            <span class="tag">ML</span>
           </div>
-        </div>
-        <img src="image4.png" alt="SALSA project illustration">
-        <div class="tags small-tags">
-          <span class="tag">speech-analysis</span>
-          <span class="tag">low-compute</span>
-          <span class="tag">accessible</span>
-        </div>
-        <div class="desc justified collapsed" data-project="4">
-          SALSA is a lightweight framework for detecting Alzheimer's from spontaneous speech while maintaining strong generalization across datasets. It uses frozen pre-trained encoders with LoRA adapters and combines acoustic embeddings with lexical cues. Designed to run efficiently on consumer hardware, it demonstrates strong cross-corpus performance on benchmarks like ADReSS 2020.
-        </div>
-        <button class="expand-btn" onclick="toggleExpand(4)">
-          Expand
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-      </section>
+          <div class="desc justified collapsed" data-project="3">
+            GeneAttentionNet classifies Alzheimer's disease using high-dimensional gene expression data with attention mechanisms to uncover meaningful gene relationships. Unlike traditional models treating genes as isolated features, it mimics biological system interactions. The model outperformed standard multilayer perceptrons by nearly 8% and Random Forests by 38%.
+          </div>
+          <button class="expand-btn" onclick="toggleExpand(3)">
+            Expand
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </section>
+        
+        <hr class="divider" />
+        
+        <section class="project">
+          <span class="project-index">04</span>
+          <div class="project-header">
+            <span class="project-title">SALSA</span>
+          </div>
+          <img src="image4.png" alt="SALSA project illustration">
+          <div class="tags small-tags">
+            <span class="tag">speech-analysis</span>
+            <span class="tag">low-compute</span>
+            <span class="tag">accessible</span>
+          </div>
+          <div class="desc justified collapsed" data-project="4">
+            SALSA is a lightweight framework for detecting Alzheimer's from spontaneous speech while maintaining strong generalization across datasets. It uses frozen pre-trained encoders with LoRA adapters and combines acoustic embeddings with lexical cues. Designed to run efficiently on consumer hardware, it demonstrates strong cross-corpus performance on benchmarks like ADReSS 2020.
+          </div>
+          <button class="expand-btn" onclick="toggleExpand(4)">
+            Expand
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </section>
 
-      <hr class="divider" />
-      
-      <section class="project">
-        <span class="project-index">05</span>
-        <div class="project-header">
-          <span class="project-title">NeuroMorphLite-fMRI</span>
-          <div class="project-buttons">
-            <a href="neuromorphlite.html" class="button-11">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <hr class="divider" />
+        
+        <section class="project">
+          <span class="project-index">05</span>
+          <div class="project-header">
+            <span class="project-title">NeuroMorphLite-fMRI</span>
           </div>
+          <img src="image5.png" alt="NeuroMorph project illustration">
+          <div class="tags small-tags">
+            <span class="tag">neuroimaging</span>
+            <span class="tag">morphology</span>
+            <span class="tag">3D-analysis</span>
+          </div>
+          <div class="desc justified collapsed" data-project="5">
+            NeuroMorphLite-fMRI merges deep learning and reinforcement learning to enhance fMRI-based Alzheimer's research with low computational demands. Built on ADNI and OASIS datasets, it uses CNN and Transformer backbones for high-fidelity brain reconstruction. A reinforcement agent optimizes regularization and identifies key regions like the hippocampus for both image clarity and diagnostic accuracy.
+          </div>
+          <button class="expand-btn" onclick="toggleExpand(5)">
+            Expand
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </section>
+        
+        <div class="footer-section">
+          <img src="footer.png" alt="Reteena footer" class="footer-image">
         </div>
-        <img src="image5.png" alt="NeuroMorph project illustration">
-        <div class="tags small-tags">
-          <span class="tag">neuroimaging</span>
-          <span class="tag">morphology</span>
-          <span class="tag">3D-analysis</span>
-        </div>
-        <div class="desc justified collapsed" data-project="5">
-          NeuroMorphLite-fMRI merges deep learning and reinforcement learning to enhance fMRI-based Alzheimer's research with low computational demands. Built on ADNI and OASIS datasets, it uses CNN and Transformer backbones for high-fidelity brain reconstruction. A reinforcement agent optimizes regularization and identifies key regions like the hippocampus for both image clarity and diagnostic accuracy.
-        </div>
-        <button class="expand-btn" onclick="toggleExpand(5)">
-          Expand
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
       </section>
-      
     </main>
-    
-    <div class="footer-section">
-      <img src="footer.png" alt="Reteena footer" class="footer-image">
-    </div>
   </div>
 
+  <svg style="display:none;">
+    <filter id="distortion">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
   <script>
+    // Close banner function
+    function closeBanner() {
+      const banner = document.getElementById('neurips-banner');
+      const header = document.getElementById('header');
+      banner.style.display = 'none';
+      header.style.top = '0';
+      document.body.style.marginTop = '0';
+    }
+
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
       const header = document.getElementById('header');
