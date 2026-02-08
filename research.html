@@ -15,6 +15,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- NeurIPS Banner -->
+  <div class="neurips-banner" id="neurips-banner">
+    <div class="announcement-content">
+      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+    </div>
+  </div>
+
   <div class="frame">
     <header id="header" class="header">
       <div class="header-container">
@@ -54,6 +62,27 @@
   </svg>
 
   <script>
+    // Close banner function
+    function closeBanner() {
+      const banner = document.getElementById('neurips-banner');
+      const header = document.getElementById('header');
+      banner.style.display = 'none';
+      header.style.top = '0';
+      document.body.style.marginTop = '0';
+      localStorage.setItem('bannerClosed', 'true');
+    }
+
+    // Check if banner was previously closed
+    if (localStorage.getItem('bannerClosed') === 'true') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('neurips-banner');
+        const header = document.getElementById('header');
+        banner.style.display = 'none';
+        header.style.top = '0';
+        document.body.style.marginTop = '0';
+      });
+    }
+
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
       const header = document.getElementById('header');
