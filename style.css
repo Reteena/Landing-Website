@@ -507,15 +507,17 @@ main {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr auto;
   gap: 80px;
   padding: 0 8vw 60px 8vw;
   box-sizing: border-box;
+  justify-content: end;
 }
 
 .footer-brand {
   display: flex;
   align-items: flex-start;
+  justify-self: start;
 }
 
 .footer-logo {
@@ -528,8 +530,9 @@ main {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  justify-self: end;
 }
 
 .footer-column {
@@ -552,7 +555,6 @@ main {
 
 .footer-bottom {
   padding: 24px 8vw;
-  border-top: 1px solid #e0e0e0;
 }
 
 .footer-copyright {
