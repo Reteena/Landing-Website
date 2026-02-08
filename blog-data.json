@@ -225,8 +225,8 @@
       ]
     },
     {
-      "id": "dynamic-context",
-      "title": "Dynamic context discovery",
+      "id": "remembrance",
+      "title": "Introducing Remembrance",
       "description": "As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own.",
       "category": "product",
       "date": "Jan 10, 2026",
