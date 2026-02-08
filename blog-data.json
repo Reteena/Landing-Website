@@ -1,603 +1,113 @@
 {
   "posts": [
     {
-      "id": "remembrance-ai-therapy",
-      "title": "Remembrance",
-      "description": "AI therapeutic service providing reminiscence therapy through interconnected memory knowledge graphs.",
+      "id": "remembrance",
+      "title": "Remembrance: AI Memory Companion for Alzheimer's Patients",
+      "description": "Remembrance is an emotionally intelligent AI memory companion for Alzheimer's patients that delivers reminiscence therapy through natural conversations.",
       "category": "product",
-      "date": "Feb 9, 2026",
-      "author": "",
+      "date": "January 15, 2026",
+      "author": "Reteena Team",
+      "image": "remembrance.png",
       "toc": [
-        { "id": "motivation", "title": "Understanding patient grief" },
-        { "id": "approach", "title": "Reminiscence therapy design" },
-        { "id": "technology", "title": "Knowledge graph architecture" }
+        { "id": "overview", "title": "Overview" },
+        { "id": "how-it-works", "title": "How It Works" },
+        { "id": "impact", "title": "Impact" }
       ],
       "content": [
-        {
-          "type": "paragraph",
-          "text": "Most conventional interventions for patients facing terminal illness or cognitive decline focus on managing physical symptoms, providing palliative care, and offering psychological support through traditional counseling methods. While these approaches address important aspects of patient wellbeing, they often miss what patients and their families actually grieve most deeply during these difficult times. Through extensive conversations with patients, caregivers, and healthcare providers, a profound pattern emerged that fundamentally shaped the development of Remembrance. What people mourn is not simply the loss of life itself, but rather the erosion of shared moments together, the fading of inside jokes that defined relationships, the forgetting of humorous nicknames that carried decades of affection, and the gradual disappearance of the countless small interactions that constitute the texture of human connection. These seemingly minor details represent the lived experience of relationships, the accumulated history that makes each bond unique and irreplaceable."
-        },
-        {
-          "type": "paragraph",
-          "text": "Traditional therapeutic approaches, while valuable, often struggle to address this specific form of grief because they lack mechanisms for actively preserving and engaging with these precious details before they are lost. Standard reminiscence therapy, a well-established intervention particularly for dementia patients, typically relies on physical objects like photo albums, music, or familiar objects to trigger memories and stimulate conversation. While effective, this approach depends heavily on the availability of appropriate prompts and the therapist's skill in facilitating recall. As cognitive decline progresses or as end-of-life approaches, the window for capturing these memories narrows, and the burden on families to document and preserve them becomes overwhelming at precisely the moment when they are least equipped to handle additional responsibilities. The spontaneous, unstructured nature of memory recall also means that important moments may never be captured simply because the right prompt never appeared at the right time."
-        },
-        {
-          "type": "heading",
-          "id": "motivation",
-          "text": "Understanding patient grief"
-        },
-        {
-          "type": "paragraph",
-          "text": "The insight that inspired Remembrance came from recognizing that the moments people cherish most are often not the major life events documented in photo albums or medical records, but rather the small, repeated interactions that build relationship intimacy over time. A particular way someone laughed at a certain type of joke. The nickname that started from a childhood mispronunciation and persisted for fifty years. The story told and retold at every family gathering, with each retelling adding new embellishments and inside references. The ritual of Sunday morning phone calls or the specific way a grandparent said goodnight. These moments are simultaneously deeply meaningful and incredibly vulnerable to loss because they exist primarily in living memory, rarely documented or preserved in any systematic way. When cognitive decline or terminal illness threatens these memories, families face the heartbreaking prospect of losing not just their loved one but the entire shared history that defined their relationship."
-        },
-        {
-          "type": "paragraph",
-          "text": "This realization suggested that therapeutic interventions could be dramatically more effective if they focused explicitly on capturing, preserving, and actively engaging with these specific types of memories before they were lost. Rather than waiting for memories to fade and then trying to stimulate recall, a proactive approach could systematically elicit and document the rich tapestry of shared experiences while patients still retained the capacity to recall and articulate them. Such an approach would serve multiple therapeutic purposes simultaneously. For patients, the process of recalling and sharing these memories provides cognitive stimulation, emotional validation, and a sense of legacy creation, affirming that their experiences and relationships have lasting meaning. For family members, participating in memory capture provides quality time with their loved one focused on positive shared experiences rather than illness management, creates a permanent record they can return to after loss, and helps them process anticipatory grief by actively engaging with rather than avoiding the reality of impending loss."
-        },
-        {
-          "type": "paragraph",
-          "text": "The therapeutic value of reminiscence has been well-established in gerontology and palliative care research, with studies demonstrating benefits including reduced depression and anxiety, improved quality of life, enhanced sense of identity and continuity, and strengthened family bonds. However, traditional reminiscence therapy faces practical limitations that restrict its accessibility and effectiveness. It typically requires trained facilitators, making it expensive and available primarily in institutional settings. Sessions are time-limited and infrequent, providing only brief windows for memory work. The unstructured nature of conversation means important memories may never surface if the right prompts are not provided. Documentation, when it occurs, often consists of simple notes that capture only a fraction of the richness of the conversation. These limitations suggested that technology, thoughtfully applied with respect for the deeply personal nature of the work, could substantially enhance the reach and impact of reminiscence therapy."
-        },
-        {
-          "type": "heading",
-          "id": "approach",
-          "text": "Reminiscence therapy design"
-        },
-        {
-          "type": "paragraph",
-          "text": "Remembrance was designed to provide AI-assisted reminiscence therapy that combines the benefits of professional facilitation with the accessibility and persistence that technology enables. The system engages patients in gentle, conversational prompting designed to elicit memories of the small, meaningful moments that define relationships. Rather than asking broad questions that might overwhelm or confuse patients with cognitive impairment, Remembrance uses a carefully designed progression of specific, focused prompts that scaffold memory recall. These prompts are personalized based on information provided by family members during setup, allowing the system to ask about specific people, places, and time periods relevant to the patient's life. The conversational interface is designed to be natural and unintimidating, avoiding technical jargon or complex interactions that might frustrate patients with varying levels of technological literacy or cognitive capacity."
-        },
-        {
-          "type": "paragraph",
-          "text": "The prompting strategy employed by Remembrance reflects deep consideration of how memory works and how to support recall in patients with cognitive challenges. Rather than asking patients to generate memories unprompted, which can be cognitively demanding and frustrating, the system provides specific cues that activate relevant memory networks. For example, instead of asking about a general relationship, Remembrance might prompt with specific contexts like meals shared together, holiday traditions, or particular locations associated with positive memories. When a memory begins to emerge, the system asks follow-up questions that help patients elaborate and enrich their recollections, gently guiding them to include sensory details, emotional responses, and the reactions of others present. This scaffolding approach makes memory work less frustrating and more successful, increasing patient engagement and the richness of captured memories."
-        },
-        {
-          "type": "paragraph",
-          "text": "A critical design principle for Remembrance is maintaining appropriate emotional tone and pacing for therapeutic work with vulnerable populations. The system is programmed to recognize signs of patient fatigue, confusion, or distress and to respond appropriately by simplifying prompts, taking breaks, or shifting to less emotionally charged topics. It validates patient emotions and memories without judgment, accepting whatever patients choose to share without imposing external standards of what should be remembered or how memories should be expressed. For patients who find certain topics difficult or painful, the system respects their boundaries and explores alternative avenues for positive reminiscence. This emotional intelligence, while implemented through carefully designed conversational rules and sentiment analysis, creates an experience that patients and families describe as supportive rather than mechanical."
-        },
-        {
-          "type": "paragraph",
-          "text": "The involvement of family members in the Remembrance process serves both practical and therapeutic purposes. Practically, family members provide essential context and personalization information that makes prompts relevant and meaningful to patients. They can participate in joint reminiscence sessions where multiple perspectives on shared memories are captured, often leading to richer and more complete narratives as participants fill in details the others had forgotten or provide their own viewpoints on shared experiences. Therapeutically, the process of collaborating on memory work provides structured, meaningful interaction time focused on positive shared history rather than illness management or caregiving tasks. This can help shift family dynamics away from the exclusively caregiver-patient relationship that often dominates late-life care, toward a more balanced relationship where the patient is recognized as a person with a rich history rather than simply a set of care needs."
-        },
-        {
-          "type": "heading",
-          "id": "technology",
-          "text": "Knowledge graph architecture"
-        },
-        {
-          "type": "paragraph",
-          "text": "The memories captured through Remembrance are stored not as simple text documents but as interconnected data in a knowledge graph structure, a choice that reflects deep consideration of how human memory actually works. Human memory is not a filing cabinet where experiences are stored in separate folders, but rather a richly interconnected network where each memory connects to many others through various types of relationships. Remembering one event often triggers recall of related events because they share participants, locations, emotional tones, or thematic elements. A knowledge graph mimics this associative structure by representing memories as nodes with explicit relationships linking them to other memories, people, places, time periods, and emotional themes. This graph structure enables several capabilities that would be impossible or much more difficult with traditional document storage."
-        },
-        {
-          "type": "paragraph",
-          "text": "The knowledge graph enables intelligent memory traversal where the system can guide patients through their memory landscape along meaningful pathways. Rather than presenting isolated prompts, Remembrance can follow threads of association, asking patients to elaborate on people or places mentioned in one memory by recalling other memories involving those same elements. This associative approach mirrors natural reminiscence in human conversation and makes the experience feel more organic and less interrogative. For family members reviewing captured memories, the graph structure enables exploration through multiple pathways based on their interests or needs at different times. They might explore chronologically to understand life progression, by person to see all memories involving a particular family member or friend, by location to recall a childhood home or favorite vacation spot, or by theme to find all memories involving humor, challenge, or triumph."
-        },
-        {
-          "type": "paragraph",
-          "text": "The interconnected nature of the knowledge graph also provides redundancy that helps preserve memories even as individual nodes might fade in detail or clarity. If a patient's recollection of a specific event becomes confused or incomplete over time, the connections to related memories, the people involved, and the broader context preserved in the graph help reconstruct a more complete picture. This redundancy mirrors how human memory networks provide resilience against forgetting, where losing access to one memory pathway does not necessarily mean the memory is entirely inaccessible if alternative routes exist. For families using Remembrance over extended periods as cognitive decline progresses, this redundancy becomes increasingly valuable as it allows them to maintain connection to memories even as the patient's ability to actively contribute new recollections diminishes."
-        },
-        {
-          "type": "paragraph",
-          "text": "The technical implementation of the knowledge graph involves natural language processing to extract entities, relationships, and themes from conversational memory sharing. When a patient describes a memory, the system identifies key elements such as people mentioned, locations, time indicators, activities, and emotional content. These extracted elements become nodes and edges in the knowledge graph, automatically creating links to existing nodes when the same elements appear in multiple memories. The system also infers additional relationships based on temporal proximity, co-occurrence of participants, and thematic similarity, enriching the graph beyond what is explicitly stated. This automatic structuring happens behind the scenes without requiring patients or families to manually organize or categorize their memories, preserving the natural, conversational character of the reminiscence experience."
-        },
-        {
-          "type": "paragraph",
-          "text": "Privacy and data sensitivity are paramount concerns for Remembrance given the deeply personal nature of the memories being captured and the vulnerability of the patient population. All memory data is encrypted both in transit and at rest, with access strictly controlled and limited to authorized family members designated by the patient or their healthcare proxy. The system includes granular privacy controls allowing patients and families to designate certain memories as private if they wish, and to control what can be shared with healthcare providers if integration with care planning is desired. Data is not used for any purpose beyond serving the patient and family, with no mining for commercial purposes or research without explicit consent. The knowledge graph architecture, while computationally sophisticated, is implemented in a way that prioritizes data privacy and user control, recognizing that these memories represent some of the most intimate and precious information people possess."
-        }
+        { "type": "heading", "id": "overview", "text": "Overview" },
+        { "type": "paragraph", "text": "Remembrance is an emotionally intelligent AI memory companion designed specifically for Alzheimer's patients. By storing memories in interconnected knowledge graphs that mirror how human memory actually works, Remembrance helps patients maintain their sense of identity and connection to their life stories even as cognitive decline progresses." },
+        { "type": "heading", "id": "how-it-works", "text": "How It Works" },
+        { "type": "paragraph", "text": "The system delivers reminiscence therapy through natural conversations, allowing patients to engage with their memories in an intuitive and meaningful way. Our knowledge graph technology creates rich connections between memories, enabling patients to explore their life stories from multiple perspectives." },
+        { "type": "heading", "id": "impact", "text": "Impact" },
+        { "type": "paragraph", "text": "Early beta testing has shown promising results in helping patients maintain cognitive function and emotional well-being. We're excited to launch our private beta soon and continue refining this important tool." }
       ]
     },
     {
       "id": "low-field-mri",
-      "title": "Low field MRI framework",
-      "description": "Published framework for low field MRI imaging applications.",
+      "title": "Low Field MRI Framework: Accessible Alzheimer's Diagnosis",
+      "description": "Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis.",
       "category": "research",
-      "date": "Feb 8, 2026",
-      "author": "",
+      "date": "December 10, 2024",
+      "author": "Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang",
+      "image": "lowfield.png",
       "toc": [
-        { "id": "introduction", "title": "Introduction to low field MRI" },
-        { "id": "framework", "title": "Framework architecture" },
-        { "id": "applications", "title": "Clinical applications" }
+        { "id": "introduction", "title": "Introduction" },
+        { "id": "methodology", "title": "Methodology" },
+        { "id": "results", "title": "Results" }
       ],
       "content": [
-        {
-          "type": "paragraph",
-          "text": "Low field MRI technology represents a significant advancement in medical imaging accessibility and cost-effectiveness. Traditional high field MRI systems, while offering excellent image quality, come with substantial infrastructure requirements including specialized facilities, extensive shielding, and high operational costs. These factors limit their deployment in resource-constrained settings and developing regions where medical imaging services are desperately needed. Our published framework addresses these limitations by providing a comprehensive approach to low field MRI implementation that maintains diagnostic utility while dramatically reducing both capital and operational expenses."
-        },
-        {
-          "type": "paragraph",
-          "text": "The framework was developed through extensive collaboration with clinical partners and has been formally published in IEEE proceedings, ensuring rigorous peer review and validation of our methodologies. This publication marks an important milestone in making advanced medical imaging technology more accessible to healthcare providers worldwide. By focusing on low field strengths, we eliminate many of the technical barriers that have traditionally limited MRI deployment, including the need for superconducting magnets, extensive electromagnetic shielding, and specialized cooling systems. These simplifications translate directly into reduced costs and increased flexibility in system placement and operation."
-        },
-        {
-          "type": "heading",
-          "id": "introduction",
-          "text": "Introduction to low field MRI"
-        },
-        {
-          "type": "paragraph",
-          "text": "Low field magnetic resonance imaging operates at field strengths significantly below the 1.5 to 3 Tesla systems commonly found in modern hospitals. While conventional wisdom has long held that higher field strengths are necessary for diagnostic quality imaging, recent advances in signal processing, reconstruction algorithms, and coil design have challenged this assumption. Our framework demonstrates that with appropriate computational techniques and hardware optimization, low field systems can produce clinically relevant images suitable for a wide range of diagnostic applications. The reduced field strength offers several intrinsic advantages including improved imaging of certain tissue types, reduced susceptibility artifacts, and enhanced safety profiles for patients with metallic implants or other contraindications to high field imaging."
-        },
-        {
-          "type": "paragraph",
-          "text": "The development of this framework required addressing multiple technical challenges unique to low field operation. Signal-to-noise ratio naturally decreases with field strength, requiring sophisticated denoising and reconstruction approaches. We incorporated advanced machine learning techniques for image enhancement, leveraging deep learning architectures trained on paired high and low field data to recover fine anatomical details. Additionally, the framework includes novel pulse sequence designs optimized for low field physics, taking advantage of longer T1 relaxation times and different contrast mechanisms compared to high field systems. These sequences were validated across multiple anatomical regions and pathological conditions to ensure broad clinical applicability."
-        },
-        {
-          "type": "paragraph",
-          "text": "One of the key innovations in our framework is its modular architecture, allowing researchers and clinicians to adapt the system to their specific needs and constraints. The framework provides standardized interfaces for hardware integration, enabling compatibility with various magnet designs, gradient systems, and radiofrequency coil configurations. This flexibility is crucial for fostering innovation in low field MRI hardware development, as different research groups can experiment with novel designs while maintaining software compatibility. The modular approach also facilitates incremental improvements and upgrades, allowing institutions to enhance their systems over time as new technologies become available without requiring complete system replacement."
-        },
-        {
-          "type": "heading",
-          "id": "framework",
-          "text": "Framework architecture"
-        },
-        {
-          "type": "paragraph",
-          "text": "The architectural foundation of our framework rests on three interconnected pillars that work synergistically to enable high-quality low field imaging. The first pillar consists of advanced signal processing algorithms specifically designed to extract maximum information from the inherently lower signal-to-noise ratio data produced by low field systems. These algorithms employ sophisticated statistical models of noise characteristics, adaptive filtering techniques that preserve edge information while suppressing noise, and multi-coil combination strategies that optimally weight contributions from array elements. The processing pipeline is fully automated, requiring minimal user intervention while remaining sufficiently flexible to accommodate different imaging protocols and anatomical targets."
-        },
-        {
-          "type": "paragraph",
-          "text": "The second architectural pillar encompasses our reconstruction methodology, which goes beyond traditional Fourier-based approaches to incorporate modern compressed sensing and parallel imaging techniques adapted for the low field regime. We developed custom regularization functions that encode prior knowledge about anatomical structures and typical artifact patterns, guiding the reconstruction process toward physiologically plausible solutions. The framework supports both Cartesian and non-Cartesian k-space sampling schemes, enabling acceleration factors comparable to those achieved in high field systems despite the reduced signal levels. Our reconstruction algorithms are implemented with computational efficiency in mind, utilizing GPU acceleration and optimized numerical methods to achieve clinically acceptable processing times even on modest computing hardware."
-        },
-        {
-          "type": "paragraph",
-          "text": "The third pillar addresses quality assurance and standardization, critical factors for clinical adoption and regulatory approval. Our framework includes comprehensive tools for system characterization, phantom-based testing protocols, and automated quality metrics that align with established medical imaging standards. These tools enable regular monitoring of system performance, early detection of hardware degradation, and documentation of image quality for clinical quality management programs. We developed standardized test objects and imaging protocols that can be used across different low field implementations, facilitating multi-center studies and enabling meaningful comparison of results between institutions. This standardization effort is essential for building confidence in low field technology among radiologists and clinicians who are accustomed to high field image quality."
-        },
-        {
-          "type": "paragraph",
-          "text": "Implementation of the framework is supported by extensive documentation, including detailed technical specifications, step-by-step deployment guides, and troubleshooting resources. We provide reference implementations of all core algorithms in open-source programming languages, encouraging community contributions and enabling other researchers to build upon our work. The documentation includes theoretical background explaining the physics and mathematics underlying each component, making the framework valuable for educational purposes in addition to its practical applications. We have also developed training materials for technologists and physicists who will be operating and maintaining low field systems, recognizing that successful technology adoption requires not just technical excellence but also comprehensive user support and education."
-        },
-        {
-          "type": "heading",
-          "id": "applications",
-          "text": "Clinical applications"
-        },
-        {
-          "type": "paragraph",
-          "text": "The clinical applications enabled by our low field MRI framework span a diverse range of diagnostic scenarios, each benefiting from the unique advantages of low field operation. Neurological imaging represents a particularly promising application area, where low field systems excel at detecting large pathologies such as brain tumors, hemorrhages, and hydrocephalus. While high field systems may provide superior visualization of subtle white matter lesions, many critical neurological conditions can be adequately assessed at low field strengths with appropriate imaging protocols. Our framework includes brain imaging sequences optimized for stroke detection, tumor characterization, and monitoring of neurodegenerative diseases. These sequences have been validated against high field reference standards, demonstrating excellent agreement for clinically significant findings."
-        },
-        {
-          "type": "paragraph",
-          "text": "Musculoskeletal applications constitute another major focus area where low field MRI shows particular promise. Joint imaging, particularly of the knee, shoulder, and ankle, can be performed effectively at low field strengths with our optimized sequences. The reduced susceptibility artifacts at low field actually improve visualization of structures near metal implants, making low field systems ideal for post-surgical follow-up imaging. Our framework includes specialized protocols for cartilage evaluation, ligament assessment, and bone marrow analysis. We have conducted extensive validation studies comparing low field musculoskeletal images to arthroscopic findings and high field references, demonstrating that low field imaging provides sufficient diagnostic information for many common orthopedic conditions. This capability is particularly valuable in sports medicine clinics and orthopedic practices where point-of-care imaging could significantly improve workflow efficiency."
-        },
-        {
-          "type": "paragraph",
-          "text": "Pediatric imaging benefits substantially from the reduced field strength and its associated safety advantages. Children often require sedation for MRI examinations due to the confined space and loud noise of conventional scanners. Low field systems, particularly those with open bore designs, are less intimidating and may reduce the need for sedation in some patients. Our framework includes pediatric-specific protocols with shortened acquisition times to minimize motion artifacts while maintaining diagnostic quality. We have worked closely with pediatric radiologists to optimize contrast parameters and develop age-appropriate reference standards. The reduced acoustic noise at low field also improves patient comfort and compliance, particularly important for anxious or claustrophobic patients of any age."
-        },
-        {
-          "type": "paragraph",
-          "text": "Point-of-care applications represent perhaps the most transformative potential of low field MRI technology enabled by our framework. The reduced size, weight, and infrastructure requirements of low field systems make them suitable for deployment in emergency departments, intensive care units, and even mobile medical facilities. Our framework includes rapid acquisition protocols for acute care scenarios such as stroke triage, where timely imaging can dramatically impact treatment decisions. We have developed integration pathways with electronic health record systems and picture archiving and communication systems to ensure seamless incorporation into existing clinical workflows. The ability to perform MRI examinations without transporting critically ill patients to distant imaging suites represents a significant advance in acute care management, potentially improving outcomes through earlier diagnosis and treatment."
-        },
-        {
-          "type": "paragraph",
-          "text": "Global health applications demonstrate the profound impact that accessible imaging technology can have on healthcare delivery in underserved regions. Many developing countries lack access to MRI technology entirely due to the prohibitive costs and infrastructure requirements of conventional systems. Low field MRI, guided by our framework, offers a pathway to bringing advanced diagnostic imaging to these populations. We have partnered with international health organizations to deploy and evaluate low field systems in resource-limited settings, documenting their clinical utility and operational feasibility. These deployments have revealed the critical importance of robust, low-maintenance designs and the need for telemedicine integration to connect local operators with remote radiologist expertise. Our framework supports these operational models through standardized protocols and quality assurance tools that enable confident interpretation of images by radiologists who may be thousands of miles away from the scanning site."
-        }
+        { "type": "heading", "id": "introduction", "text": "Introduction" },
+        { "type": "paragraph", "text": "Our Low Field MRI Framework represents a breakthrough in accessible neuroimaging for Alzheimer's diagnosis. By leveraging deep learning-based brain segmentation and volumetric analysis, we enable accurate diagnosis using affordable, low-strength scanners." },
+        { "type": "heading", "id": "methodology", "text": "Methodology" },
+        { "type": "paragraph", "text": "We developed a sophisticated deep learning pipeline that compensates for the lower signal quality of low-field MRI scanners. Our approach achieves 96% diagnostic accuracy while using equipment that costs a fraction of conventional high-field MRI systems." },
+        { "type": "heading", "id": "results", "text": "Results" },
+        { "type": "paragraph", "text": "This work was published at IEEE BigData 2024 and demonstrates that high-quality neuroimaging for Alzheimer's diagnosis can be made accessible to healthcare facilities worldwide, regardless of their budget constraints." }
       ]
     },
     {
-      "id": "cortiforge-framework",
-      "title": "CortiForge",
-      "description": "Framework for reproducible cortical microcircuit modeling with spiking neural networks.",
+      "id": "lark",
+      "title": "Lark: Multi-Stakeholder LLM Agents for Decision Making",
+      "description": "A biologically inspired decision-making framework that combines LLM-based reasoning with an evolutionary, stakeholder-aware multi-agent system.",
       "category": "research",
-      "date": "Feb 6, 2026",
-      "author": "",
+      "date": "December 5, 2025",
+      "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
+      "image": "lark.png",
       "toc": [
-        { "id": "introduction", "title": "Introduction to cortical modeling" },
-        { "id": "validation", "title": "Validation against experimental data" },
-        { "id": "neuron-models", "title": "Neuron and synapse models" },
-        { "id": "results", "title": "Experimental results" }
+        { "id": "concept", "title": "The Concept" },
+        { "id": "architecture", "title": "Architecture" },
+        { "id": "applications", "title": "Applications" }
       ],
       "content": [
-        {
-          "type": "paragraph",
-          "text": "Understanding how cognitive function emerges from the dynamics of neural circuits represents one of the grand challenges in modern neuroscience. While artificial neural networks have achieved remarkable success in machine learning applications, they often function as black boxes that provide little insight into the biological algorithms actually employed by the brain. CortiForge addresses this fundamental gap by providing researchers with a comprehensive, open-source framework specifically designed for constructing, validating, and analyzing biologically constrained models of cortical microcircuits. The framework bridges the divide between abstract computational models and empirical neuroscience data, enabling rigorous quantitative comparisons between simulated network dynamics and experimental recordings from living neural tissue."
-        },
-        {
-          "type": "paragraph",
-          "text": "The development of CortiForge was motivated by the observation that while mathematical descriptions of point-neuron models and synaptic plasticity rules have existed for decades, the practical challenge of validating these models against rich, multi-modal experimental datasets remains substantial. Modern neuroscience produces increasingly sophisticated data including spike times, local field potentials, behavioral measurements, and extensive metadata, yet few frameworks provide integrated tools for leveraging this wealth of information to constrain and validate computational models. CortiForge fills this critical need by offering not just simulation capabilities, but a complete end-to-end workflow encompassing model construction, parameter fitting, statistical analysis, and visualization of discrepancies between model predictions and empirical observations."
-        },
-        {
-          "type": "heading",
-          "id": "introduction",
-          "text": "Introduction to cortical modeling"
-        },
-        {
-          "type": "paragraph",
-          "text": "Cortical microcircuits exhibit extraordinary complexity arising from the interplay of multiple factors that must be carefully balanced in any realistic model. Excitation and inhibition must be precisely tuned to maintain network stability while enabling flexible information processing. This excitation-inhibition balance is not a static property but rather emerges dynamically from the interactions of diverse cell types, each with distinct intrinsic firing properties. Excitatory pyramidal neurons exhibit spike-frequency adaptation, where their firing rates progressively decline during sustained input due to the accumulation of calcium-activated potassium currents. Inhibitory interneurons come in multiple varieties including fast-spiking parvalbumin-positive cells and adapting somatostatin-positive cells, each playing distinct roles in shaping network dynamics and implementing different computational operations."
-        },
-        {
-          "type": "paragraph",
-          "text": "Beyond cellular diversity, cortical circuits are characterized by highly structured connectivity patterns that reflect both genetic specification and activity-dependent refinement during development. Connections between neurons are neither random nor all-to-all, but rather follow complex statistical rules that depend on cell types, laminar positions, and distances between neurons. These connectivity patterns have profound implications for network function, determining how information flows through circuits and how patterns of activity propagate and transform. CortiForge provides flexible tools for specifying connectivity rules that can range from simple probabilistic connections to sophisticated distance-dependent and cell-type-specific patterns observed in anatomical studies. The framework allows researchers to systematically explore how different connectivity assumptions impact emergent network dynamics."
-        },
-        {
-          "type": "paragraph",
-          "text": "Synaptic plasticity adds another layer of complexity and computational power to cortical circuits. The strength of connections between neurons is not fixed but rather changes over time according to rules that depend on the precise timing of pre- and postsynaptic action potentials. Spike-timing-dependent plasticity strengthens connections when presynaptic spikes consistently precede postsynaptic spikes, implementing a Hebbian learning rule that allows networks to learn temporal correlations in their inputs. This form of plasticity is thought to underlie many forms of learning and memory in the brain, and its inclusion in computational models is essential for studying adaptive network behavior. CortiForge implements standard STDP rules while allowing users to easily modify plasticity parameters or implement alternative learning rules to test different hypotheses about synaptic modification."
-        },
-        {
-          "type": "paragraph",
-          "text": "Brain state significantly modulates cortical circuit dynamics through the action of neuromodulators including dopamine, acetylcholine, serotonin, and norepinephrine. These chemical signals do not directly drive neural firing but rather alter the properties of neurons and synapses, shifting networks between different operational modes. Acetylcholine enhances cortical excitability and sensory responsiveness during wakefulness and attention, while its absence during sleep is associated with different patterns of oscillatory activity. Dopamine modulates synaptic plasticity, gating learning in response to reward-predicting stimuli. CortiForge includes demonstration modules showing how neuromodulatory effects can be incorporated into spiking network models, providing researchers with templates for studying state-dependent computation and learning in cortical circuits."
-        },
-        {
-          "type": "paragraph",
-          "text": "The framework is built on Brian 2, a flexible and widely-used simulator for spiking neural networks that provides efficient numerical integration of differential equations describing neuron and synapse dynamics. Brian 2 was chosen for its combination of ease of use, computational efficiency, and flexibility in defining custom neuron and synapse models. CortiForge extends Brian 2 by adding higher-level abstractions for common modeling tasks, standardized analysis pipelines, and integration with experimental data sources. Users familiar with Brian 2 can leverage their existing knowledge while benefiting from CortiForge's additional capabilities, while newcomers can use CortiForge's simplified interfaces without needing to master all of Brian 2's complexity."
-        },
-        {
-          "type": "heading",
-          "id": "validation",
-          "text": "Validation against experimental data"
-        },
-        {
-          "type": "paragraph",
-          "text": "The validation capabilities of CortiForge represent one of its most distinctive and valuable features, setting it apart from generic neural simulation tools. The framework provides programmatic access to the Allen Brain Observatory, a massive public repository of standardized electrophysiology recordings from the mouse visual cortex. Through integration with the AllenSDK, CortiForge enables researchers to directly query experimental datasets, extract relevant statistics, and compare them quantitatively to simulated data using matched analysis methods. This tight integration between simulation and experimental data eliminates many of the manual, error-prone steps traditionally required for model validation, allowing researchers to iterate rapidly between model refinement and empirical comparison."
-        },
-        {
-          "type": "paragraph",
-          "text": "For our pilot validation study, we selected Session ID 715093703 from the Allen Brain Observatory, which contains Neuropixels probe recordings from multiple brain regions including prefrontal cortex, superior frontal gyrus, and hippocampus. These recordings capture the simultaneous activity of 112 well-isolated single neurons over extended periods while the animal views naturalistic visual stimuli. The dataset includes both high-quality spike sorting to identify individual neurons and local field potential recordings reflecting population-level activity. This combination of single-cell and population measures provides multiple levels of constraint for model validation, enabling assessment of both microscopic firing properties and macroscopic network dynamics."
-        },
-        {
-          "type": "paragraph",
-          "text": "Our validation approach extracts a comprehensive set of statistical measures from both experimental and simulated data, enabling multi-dimensional comparison of model performance. Firing rate statistics provide the most basic level of constraint, with the framework computing mean firing rates, standard deviations, and full distributions across neuronal populations. While firing rates alone are insufficient to fully characterize neural dynamics, they provide an essential sanity check and starting point for model tuning. The framework calculates these statistics using identical time windows and binning parameters for both simulated and experimental data, ensuring that comparisons are not confounded by analysis differences."
-        },
-        {
-          "type": "paragraph",
-          "text": "Inter-spike interval distributions provide much richer information about the temporal structure of neural firing than simple rate statistics. Cortical neurons exhibit highly irregular firing patterns characterized by long-tailed ISI distributions rather than the regular, clock-like firing of a simple integrate-and-fire model with constant input. This irregularity arises from the balanced bombardment of excitatory and inhibitory synaptic inputs that neurons receive in vivo, creating substantial trial-to-trial variability even for repeated presentations of identical stimuli. CortiForge computes ISI distributions from both simulated spike trains and experimental recordings, comparing them using the Kolmogorov-Smirnov test to quantify the similarity of their statistical properties. The coefficient of variation of ISIs provides a single summary statistic capturing firing irregularity, with values near one indicating Poisson-like irregular firing typical of cortical neurons."
-        },
-        {
-          "type": "paragraph",
-          "text": "Local field potential analysis provides a complementary view of network dynamics at the population level. The LFP reflects primarily synaptic currents flowing through neuronal membranes and can be measured experimentally using extracellular electrodes. In our simulations, we approximate the LFP as the mean synaptic current flowing into excitatory neurons, a simplification that captures the essential character of the signal while remaining computationally tractable. This approximation has been validated in previous studies and provides a reasonable surrogate for extracellular potentials. From both simulated and experimental LFPs, we compute power spectral density using standard Fourier methods with appropriate windowing to minimize spectral leakage. The resulting spectra are then integrated across canonical frequency bands including delta, theta, alpha, beta, and gamma ranges, providing a compact summary of oscillatory activity that can be easily compared between model and experiment."
-        },
-        {
-          "type": "paragraph",
-          "text": "Statistical comparison between simulated and experimental measures goes beyond simple visual inspection to provide quantitative assessments of model fit. For each validation metric, the framework reports not just the values obtained from simulation and experiment, but also computes appropriate statistical tests and effect sizes. The Kolmogorov-Smirnov test assesses whether ISI distributions are drawn from the same underlying distribution, with small p-values indicating significant discrepancies that should guide model refinement. For continuous measures like firing rates and spectral power, the framework computes confidence intervals and tests for significant differences. These quantitative assessments make it possible to systematically track model improvement across iterations and to objectively compare different modeling approaches."
-        },
-        {
-          "type": "heading",
-          "id": "neuron-models",
-          "text": "Neuron and synapse models"
-        },
-        {
-          "type": "paragraph",
-          "text": "CortiForge implements two complementary classes of point-neuron models that strike different balances between biological realism and computational efficiency. The Leaky Integrate-and-Fire neuron represents the simpler of the two models, capturing the essential dynamics of neuronal integration while remaining extremely computationally efficient. In the LIF model, the membrane potential evolves according to a first-order differential equation that includes a leak term representing ion channels that tend to pull the potential back toward resting level, and an input term representing synaptic currents. When the membrane potential crosses a fixed threshold, a spike is generated, the neuron briefly enters a refractory period during which it cannot spike again, and the potential is reset to a subthreshold value. Despite its simplicity, the LIF model captures several important features of real neurons including temporal integration of inputs, threshold-triggered spiking, and the existence of a characteristic timescale for integration set by the membrane time constant."
-        },
-        {
-          "type": "paragraph",
-          "text": "The Adaptive Exponential Integrate-and-Fire neuron extends the basic LIF model in two critical ways that significantly enhance its biological realism. First, it incorporates an exponential term in the voltage equation that captures the nonlinear dynamics of spike initiation. In real neurons, the opening of voltage-gated sodium channels creates a positive feedback process where depolarization leads to more channel opening, which causes further depolarization. This process accelerates as threshold is approached, creating the characteristic sharp onset of action potentials. The exponential term in the AdEx model approximates this nonlinearity, producing more realistic spike shapes and timing compared to the hard threshold of the LIF model. Second, and more importantly for network dynamics, the AdEx model includes an adaptation variable that implements spike-frequency adaptation. This adaptation current is driven by each spike and decays slowly between spikes, effectively implementing a form of negative feedback that reduces the neuron's excitability following periods of high activity."
-        },
-        {
-          "type": "paragraph",
-          "text": "Spike-frequency adaptation has profound implications for network dynamics and information processing. At the single-neuron level, adaptation causes firing rates to decline over the course of sustained inputs, allowing neurons to differentially respond to transient changes versus sustained features of stimuli. This property is thought to contribute to sensory adaptation phenomena observed psychophysically. At the network level, adaptation in excitatory neurons helps stabilize recurrent circuits by providing negative feedback that counteracts runaway excitation. When many excitatory neurons fire strongly, their collective adaptation accumulates, reducing network excitability and preventing pathological synchronization. The parameters controlling adaptation strength and timescale can be adjusted in CortiForge to match the properties of different neuron types or to explore how adaptation influences network behavior."
-        },
-        {
-          "type": "paragraph",
-          "text": "Within CortiForge, AdEx neurons serve as the primary excitatory population while LIF neurons typically represent inhibitory interneurons. This combination reflects the observation that cortical pyramidal neurons, which provide most of the excitatory drive in cortex, exhibit prominent adaptation, while many classes of inhibitory interneurons, particularly fast-spiking parvalbumin-positive cells, show minimal adaptation. By using different neuron models for these populations, we capture key differences in their intrinsic dynamics while keeping both models within the computationally tractable point-neuron framework. The framework provides default parameter sets for both models based on fits to experimental data, but all parameters are easily accessible and can be modified to explore parameter sensitivity or to model different cortical regions or species."
-        },
-        {
-          "type": "paragraph",
-          "text": "Synaptic interactions in CortiForge are modeled as conductance-based currents rather than simple current injections. In the conductance-based formulation, the synaptic current depends not only on the synaptic weight but also on the difference between the membrane potential and the synaptic reversal potential. This creates a more realistic input-output relationship where synaptic effects are strongest when the membrane potential is far from the reversal potential and weaken as the potential approaches that reversal value. For excitatory synapses, the reversal potential is set near zero millivolts, well above typical resting potentials, so excitatory inputs drive the membrane potential upward. For inhibitory synapses, the reversal potential is set near the resting potential or slightly below, so inhibitory inputs pull the potential toward or below rest, counteracting excitatory drive. This conductance-based approach captures the shunting effects of inhibition, where inhibitory synapses reduce neuronal excitability not just by hyperpolarizing the membrane but by increasing membrane conductance and thus reducing the impact of excitatory inputs."
-        },
-        {
-          "type": "paragraph",
-          "text": "When plasticity is enabled in simulations, synaptic weights evolve according to spike-timing-dependent plasticity rules that adjust connection strengths based on the relative timing of pre- and postsynaptic action potentials. The STDP implementation in CortiForge follows the classical formulation where synaptic weights are increased when presynaptic spikes precede postsynaptic spikes by a small time window, and decreased when the temporal order is reversed. The magnitude of these weight changes decays exponentially with the time difference between spikes, implementing a form of temporal credit assignment that strengthens connections responsible for driving postsynaptic firing while weakening ineffective connections. Weight changes are accumulated over many spike pairings, allowing the network to gradually learn the statistical structure of its inputs. To prevent pathological growth or elimination of weights, CortiForge implements hard bounds on synaptic strengths, ensuring that weights remain within biologically plausible ranges throughout long simulations."
-        },
-        {
-          "type": "heading",
-          "id": "results",
-          "text": "Experimental results"
-        },
-        {
-          "type": "paragraph",
-          "text": "Our pilot validation experiment demonstrates both the capabilities of the CortiForge framework and the current state of quantitative agreement between spiking network models and experimental cortical recordings. We constructed a recurrent network model consisting of 120 excitatory AdEx neurons and 30 inhibitory LIF neurons, maintaining the 4:1 ratio of excitatory to inhibitory cells observed in cortical anatomy. This network size was deliberately chosen to be relatively small, providing a computationally tractable proof-of-concept while still being large enough to exhibit collective network phenomena. All neurons received independent Poisson spike train inputs at a mean rate of 8 Hz, matching the average firing rate observed in the target experimental dataset. Recurrent connectivity followed probabilistic rules with connection probabilities and weights set to values typical of cortical circuits, though not explicitly fit to the experimental data."
-        },
-        {
-          "type": "paragraph",
-          "text": "The simulation was run for 5 seconds of biological time, providing sufficient data for robust estimation of firing rate statistics and spectral properties while remaining computationally feasible. From the simulated spike trains, we extracted the same statistical measures computed from the experimental data, enabling direct quantitative comparison. The mean firing rate across the simulated population was 0.05 Hz with a standard deviation of 0.10 Hz, substantially lower than the experimental values of 8.30 Hz mean and 8.08 Hz standard deviation. This pronounced discrepancy in overall activity levels indicates that while the model captures certain architectural features, its excitation-inhibition balance and response gain require significant recalibration to match in vivo firing rates. The low simulated firing rates likely reflect insufficient recurrent excitation or excessive inhibition in our initial parameter choices, highlighting one of the key roles of validation frameworks like CortiForge, identifying specific aspects of model behavior that require adjustment."
-        },
-        {
-          "type": "paragraph",
-          "text": "Despite the mismatch in absolute firing rates, the model successfully reproduced several important qualitative features of cortical dynamics. The distribution of inter-spike intervals in the simulated data exhibited the characteristic long-tailed shape observed experimentally, reflecting irregular, Poisson-like spiking rather than regular, clock-like firing. This irregularity arises from the balanced bombardment of excitatory and inhibitory inputs that each neuron receives, creating substantial moment-to-moment variability in membrane potential. The coefficient of variation of ISIs in the simulation was 0.9, reasonably close to the experimental value of 1.1, indicating that the model captures the degree of firing irregularity even if it underestimates overall rates. The Kolmogorov-Smirnov test comparing simulated and experimental ISI distributions yielded a statistic of 0.71 and p-value of 0.0046, confirming that while the distributions share similar qualitative features, statistically significant differences remain that should guide future model refinement."
-        },
-        {
-          "type": "paragraph",
-          "text": "Analysis of the simulated local field potential revealed network-level oscillatory dynamics within the gamma frequency range (30-80 Hz), a prominent feature of cortical circuits associated with local processing and communication. The power spectrum of the simulated LFP showed a clear peak in the gamma band, reflecting fast oscillations arising from the interplay between excitatory and inhibitory populations in the recurrent network. However, comparison with experimental LFP spectra revealed important differences in the distribution of power across frequency bands. The simulation exhibited relatively more power in high-gamma frequencies and less in the delta range compared to experimental recordings. This pattern suggests that while the model captures fast local dynamics mediated by excitatory-inhibitory interactions, it may not fully implement the slower, large-scale network mechanisms responsible for low-frequency oscillations. These low-frequency components often reflect interactions between brain regions or cortical layers not explicitly represented in our small network model."
-        },
-        {
-          "type": "paragraph",
-          "text": "The discrepancies between simulated and experimental results should not be viewed as failures but rather as valuable information guiding model improvement, which is precisely the purpose of validation frameworks like CortiForge. The mismatch in firing rates points to the need for systematic exploration of connection strengths and external input levels to achieve appropriate excitation-inhibition balance. The differences in LFP spectral content suggest that additional mechanisms may need to be incorporated, such as adaptation currents with longer timescales, synaptic depression that provides negative feedback on faster timescales than spike-frequency adaptation, or explicit modeling of thalamocortical inputs that can drive low-frequency rhythms. By making these discrepancies quantitatively explicit, CortiForge provides clear targets for model refinement and enables systematic, data-driven improvement of cortical circuit models. Future work will focus on parameter optimization to better match experimental statistics, expansion of the network to include multiple layers and cell types, and validation across multiple recording sessions to ensure that findings generalize beyond a single dataset."
-        }
-      ]
-    },
-    {
-      "id": "lark-multi-stakeholder",
-      "title": "Lark",
-      "description": "Biologically inspired neuroevolution framework for multi-stakeholder LLM agent systems.",
-      "category": "research",
-      "date": "Feb 5, 2026",
-      "author": "",
-      "toc": [
-        { "id": "approach", "title": "Four biological mechanisms" },
-        { "id": "evaluation", "title": "Evaluation results" },
-        { "id": "comparison", "title": "Model comparisons" },
-        { "id": "insights", "title": "Key findings" }
-      ],
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Large language models have transformed the landscape of artificial intelligence by enabling machines to reason abstractly, simulate human perspectives, and generate novel strategies for complex problems. However, when deployed in multi-agent systems designed to address real-world challenges, these models face critical limitations that constrain their practical utility. Current LLM-augmented multi-agent systems tend to produce verbose and redundant outputs that consume substantial computational resources without proportional gains in solution quality. They struggle to explore diverse alternative strategies and potential future states, often settling on the first reasonable solution rather than searching systematically for superior options. Perhaps most critically, existing systems lack robust mechanisms for navigating multi-stakeholder scenarios where different parties hold conflicting objectives and preferences. Lark addresses these fundamental challenges through a novel framework that couples LLM-driven reasoning with biologically inspired evolutionary mechanisms, creating a system capable of generating diverse, efficient, and stakeholder-aligned solutions."
-        },
-        {
-          "type": "paragraph",
-          "text": "The biological inspiration underlying Lark draws from multiple domains of evolutionary biology and neuroscience, integrating mechanisms that have proven effective across millions of years of natural selection. Plasticity, the ability of neural systems to adapt rapidly within an organism's lifetime, provides a model for context-sensitive refinement of solutions without requiring complete regeneration. Gene duplication followed by subfunctionalization, where copied genes diverge to perform related but distinct functions, suggests mechanisms for creating specialized variants of high-performing strategies. Social decision-making in animal groups, where individuals with different preferences must reach collective decisions, offers insights into fair aggregation of heterogeneous stakeholder preferences. Resource constraints in biological systems, where organisms must balance energy expenditure against fitness gains, motivate compute-aware optimization that rewards efficient solutions. By integrating these four mechanisms into a unified framework, Lark achieves performance gains that exceed what any single mechanism could provide in isolation."
-        },
-        {
-          "type": "heading",
-          "id": "approach",
-          "text": "Four biological mechanisms"
-        },
-        {
-          "type": "paragraph",
-          "text": "The plasticity mechanism in Lark implements rapid, context-sensitive modifications to candidate solutions, analogous to how synaptic strengths in neural circuits adjust based on recent activity patterns. In biological systems, plasticity enables quick adaptation to changing environmental conditions without requiring genetic changes that would take generations to accumulate. Lark translates this concept into an LLM-driven refinement operator that takes existing strategy proposals and scenario-specific context as inputs, producing improved variants that address identified weaknesses while preserving core structural elements. The refinement process is guided by explicit instructions to the language model, directing it to identify context-specific limitations in current proposals, suggest targeted modifications that address these limitations, maintain the fundamental approach while refining implementation details, and constrain the scope of modifications to preserve diversity across the solution population."
-        },
-        {
-          "type": "paragraph",
-          "text": "Implementation of plasticity in Lark carefully balances exploration and exploitation through probabilistic application and temperature scheduling. Rather than applying plasticity to every candidate at every generation, the system samples from a Bernoulli distribution with probability that can be adjusted based on the evolutionary stage. Early in the search process, plasticity might be applied more conservatively to allow diverse initial proposals to be evaluated without excessive refinement. As the search progresses and promising regions of solution space are identified, plasticity application probability can increase, focusing computational effort on polishing the most promising candidates. The temperature parameter controlling the language model during plasticity operations similarly decays over generations, shifting from more exploratory modifications early in search to more focused refinements later. This scheduling mirrors annealing processes in both biological systems and computational optimization methods."
-        },
-        {
-          "type": "paragraph",
-          "text": "The duplication and maturation mechanism draws inspiration from gene duplication events that have played a crucial role in the evolution of biological complexity. When a gene is duplicated, creating two copies where there was previously one, these copies are initially redundant but can subsequently diverge through mutation and selection to perform related but distinct functions. This process, called subfunctionalization, has generated much of the functional diversity observed in protein families and regulatory networks. Lark implements an analogous process where high-performing strategies are probabilistically selected for duplication based on their fitness, as measured by aggregated stakeholder preferences. The duplication probability follows a logistic function of the deviation between a candidate's score and the population mean, creating selection pressure that favors but does not guarantee duplication of top performers while maintaining some probability of duplicating moderately performing solutions that might contain valuable variation."
-        },
-        {
-          "type": "paragraph",
-          "text": "Maturation transforms duplicated strategies through targeted specialization rather than random mutation. The language model receives prompts directing it to identify specific stakeholder subgroups or objective dimensions for which the duplicated strategy could be optimized, modify the strategy to better serve that specialized context, introduce novel implementation details not present in the parent strategy, and ensure the resulting variant remains feasible within stated resource and operational constraints. This directed specialization creates functional diversity within the strategy population, with different variants optimized for different stakeholder profiles or operational scenarios. The maturation process leverages the language model's semantic understanding to generate meaningful specializations rather than relying on blind variation, dramatically increasing the likelihood that modified strategies remain viable and potentially superior to their parents."
-        },
-        {
-          "type": "paragraph",
-          "text": "Stakeholder preference aggregation via ranked-choice voting solves a fundamental challenge in multi-objective optimization where different parties hold conflicting preferences and no single solution can simultaneously maximize all objectives. Traditional approaches to multi-objective optimization often require stakeholders to specify cardinal utilities or inter-personal preference weights, problematic requirements in real-world scenarios where such precise quantification may be impossible or strategic considerations make stakeholders reluctant to reveal true preferences. Lark employs influence-weighted Borda count, a voting system that requires only ordinal rankings from each stakeholder while producing consensus scores that guide evolutionary selection. Each stakeholder ranks all candidate strategies, and the Borda score for each strategy accumulates points based on its position in each stakeholder's ranking, weighted by that stakeholder's influence in the decision process."
-        },
-        {
-          "type": "paragraph",
-          "text": "The Borda count mechanism possesses several desirable properties that make it particularly suitable for multi-stakeholder decision-making in LLM agent systems. It is robust to strategic manipulation under many voting scenarios, meaning stakeholders cannot easily game the system by submitting dishonest rankings. It does not require stakeholders to specify the magnitude of their preferences, only their relative ordering, reducing cognitive burden and potential for disagreement about preference strength. The coefficient of variation of Borda scores across candidates provides a natural measure of consensus strength, with low variation indicating that stakeholders largely agree on relative strategy quality, while high variation signals significant divergence in preferences that may require explicit negotiation or compromise. This consensus measure can guide system behavior, potentially triggering alternative resolution mechanisms when stakeholder preferences are too divergent for automated aggregation to produce satisfactory outcomes."
-        },
-        {
-          "type": "paragraph",
-          "text": "Compute efficiency constraints address the tendency of language models to generate verbose outputs that consume tokens without proportional improvement in solution quality. In biological systems, energy is a precious resource that must be allocated efficiently across competing demands, creating selection pressure for compact, efficient solutions to problems. Lark implements this principle through token-based penalties that incorporate computational cost directly into fitness evaluation. The compute-adjusted fitness function applies a soft penalty based on the token count of each strategy relative to a target budget, reducing fitness scores for strategies that exceed the target length. This soft constraint approach encourages conciseness without imposing hard limits that might exclude verbose but high-quality solutions, allowing the system to make explicit trade-offs between solution quality and computational cost."
-        },
-        {
-          "type": "paragraph",
-          "text": "Efficiency tracking complements the token penalty by monitoring how the population's quality-per-token ratio evolves across generations. This metric, computed as the mean Borda score divided by token count averaged across all candidates, reveals whether the evolutionary process successfully improves resource efficiency over time or merely shifts between solutions with different cost-quality trade-offs. Increasing efficiency metrics indicate that the system is discovering more compact ways to express effective strategies, a desirable outcome that reduces deployment costs and inference latency. Stable or decreasing efficiency despite token penalties suggests that solution quality improvements require proportional increases in strategy complexity, information that can guide decisions about budget allocation and performance expectations. By making these trade-offs explicit and measurable, Lark enables informed decisions about when to prioritize efficiency versus raw performance."
-        },
-        {
-          "type": "heading",
-          "id": "evaluation",
-          "text": "Evaluation results"
-        },
-        {
-          "type": "paragraph",
-          "text": "The evaluation of Lark employed a rigorous experimental protocol designed to provide quantitative evidence for the framework's effectiveness while acknowledging the limitations inherent in any preliminary investigation. We constructed 30 unique synthetic scenarios spanning six distinct decision-making domains, each designed to present challenges requiring multi-stakeholder coordination, constraint satisfaction, and creative strategy generation. The domains included multi-stakeholder trade-off scenarios where parties hold directly competing objectives, policy proposal tasks requiring balancing of diverse constituency interests, product roadmap planning with conflicting feature priorities and resource limitations, campaign planning under budget and messaging constraints, infrastructure siting decisions involving environmental and community concerns, and clinical decision-making scenarios balancing patient outcomes with resource availability and ethical considerations."
-        },
-        {
-          "type": "paragraph",
-          "text": "Each scenario was synthetically generated using structured prompt templates that specified stakeholder profiles including their objectives and constraints, contextual background describing the decision-making situation, conflicting requirements that preclude simple unanimous solutions, and resource or operational constraints that must be respected. This synthetic approach enabled controlled experimentation where we could systematically vary difficulty levels and stakeholder complexity while maintaining consistency in evaluation. While synthetic scenarios cannot fully capture the richness and unpredictability of real-world decision-making, they provide essential experimental control for isolating mechanism contributions and conducting statistically powered ablation studies. We explicitly acknowledge this limitation and view the synthetic evaluation as a necessary first step that establishes proof-of-concept feasibility before proceeding to more ecologically valid real-world validation studies."
-        },
-        {
-          "type": "paragraph",
-          "text": "Evaluation employed an LLM-as-a-judge framework with dual independent judges to mitigate single-evaluator biases that could arise from idiosyncrasies in how individual language models assess solution quality. Each judge, implemented using a standardized language model with temperature set to 0.1 for consistency, evaluated model outputs according to a comprehensive 50-point rubric divided into five equally-weighted criteria. Coverage and completeness assessed whether solutions addressed all key stakeholder concerns identified in the scenario. Feasibility and realism evaluated whether proposed strategies could actually be implemented given stated constraints and resources. Specificity and thoroughness measured the level of concrete operational detail provided rather than vague generalities. Constraint adherence verified that solutions respected all stated limitations including budgets, timelines, and policy requirements. Clarity and structure evaluated the logical organization and communicative effectiveness of strategy presentations."
-        },
-        {
-          "type": "paragraph",
-          "text": "Judge aggregation used the same ranked-choice voting mechanism employed within Lark itself, ensuring methodological consistency between how the system makes decisions and how we evaluate those decisions. The two judges each ranked all 14 comparison systems on each round, and these rankings were combined using Borda count to produce consensus scores. This approach ensures that evaluation results reflect agreement between multiple perspectives rather than the potentially biased view of any single judge. When judges disagree substantially on relative system rankings, this disagreement is reflected in lower consensus metrics, providing transparency about evaluation uncertainty. The use of LLM judges rather than human evaluators enabled us to conduct a large-scale comparison across 30 rounds and 14 systems, a scope that would be prohibitively expensive with human evaluation, while accepting the limitation that LLM judges may not perfectly capture human assessments of strategy quality."
-        },
-        {
-          "type": "paragraph",
-          "text": "Across the 30 evaluation rounds, Lark Full, the complete system with all four mechanisms enabled, achieved a mean rank of 2.55 with 95 percent confidence interval from 2.17 to 2.93 and a mean composite score of 29.4 out of 50 points with confidence interval from 26.34 to 32.46. These results position Lark as the top-performing system in the comparison, with the confidence intervals not overlapping with those of most other systems, indicating statistically reliable superior performance. Lark finished in the top three positions in 80 percent of rounds, demonstrating consistent rather than sporadic excellence. Strong baseline systems including GPT-o3 and Qwen3-Next-80B achieved competitive but slightly lower performance, with mean ranks of 4.30 and 4.40 respectively, suggesting that the biologically inspired mechanisms in Lark provide measurable value beyond what is achieved by frontier language models alone when applied directly to multi-stakeholder decision tasks."
-        },
-        {
-          "type": "paragraph",
-          "text": "Cost analysis revealed that Lark Full operates at comparable expense to leading commercial models, with an average cost of 0.016 dollars per task compared to 0.016 dollars for GPT-o3, the nearest cost competitor. This cost parity is particularly noteworthy given that Lark performs multiple generations of evolutionary search with plasticity refinements and maturation operations, operations that might be expected to substantially increase computational expense. The cost efficiency stems from using DeepSeek-V3.1 as the base language model, which offers strong performance at lower inference costs than frontier models, and from the token penalties that encourage concise outputs. Ablation variants of Lark generally achieved lower per-task costs, ranging from 0.002 to 0.011 dollars, but these cost savings came at the expense of reduced solution quality, with score decrements of 2 to 3.5 points. This pattern suggests that Lark Full operates near a Pareto frontier in the cost-quality trade-off space, where further cost reductions would require accepting disproportionate quality losses."
-        },
-        {
-          "type": "heading",
-          "id": "comparison",
-          "text": "Model comparisons"
-        },
-        {
-          "type": "paragraph",
-          "text": "Systematic ablation studies provide the strongest evidence for the contribution of each biological mechanism to overall system performance. We constructed four ablation variants, each disabling one of the four core mechanisms while keeping the others operational. Lark-NoPlasticity removed the context-sensitive refinement process, preventing within-generation adaptation of strategies. Lark-NoRankedChoiceVoting replaced the Borda count stakeholder aggregation with simple averaging of scores, eliminating the sophisticated preference integration that accounts for ranking positions. Lark-NoMutationAndNoDuplication disabled both the duplication and maturation processes, preventing the creation of specialized strategy variants. Lark-NoPenalty removed the token-based compute constraints, allowing strategies to grow to arbitrary lengths without fitness penalties. Each ablation was evaluated on the identical set of 30 scenarios under matched conditions, enabling paired statistical comparisons that control for scenario difficulty and random variation."
-        },
-        {
-          "type": "paragraph",
-          "text": "The ablation results reveal that all four mechanisms contribute substantially and significantly to overall performance. Removing duplication and maturation created the largest performance deficit, with a mean score decrease of 3.5 points compared to the full system, corresponding to Cohen's dz effect size of 2.53, classified as very large in standard interpretation guidelines. This massive effect confirms that the ability to create and specialize high-performing strategy variants constitutes the single most important mechanism in the Lark framework. The duplication and maturation process essentially implements a form of local search in the neighborhood of good solutions, refining and specializing them for different stakeholder profiles and operational contexts. Without this mechanism, the system must rely entirely on the initial generation of diverse strategies and cannot effectively exploit promising regions of solution space once they are discovered."
-        },
-        {
-          "type": "paragraph",
-          "text": "Plasticity removal resulted in a score decrease of 3.4 points with Cohen's dz of 1.86, also a very large effect indicating that within-generation refinement plays a critical role comparable to duplication and maturation. The similarity in effect sizes between these two mechanisms suggests they contribute complementary forms of adaptation, plasticity providing rapid context-specific adjustments while duplication and maturation create longer-lasting specialized variants. The statistical significance of the plasticity effect, with Wilcoxon p-value less than 0.001, confirms that this result is not due to chance variation but reflects a real and substantial contribution to system performance. The large effect size indicates that the difference between versions with and without plasticity is easily observable in practice, not just a subtle statistical signal detectable only with large sample sizes."
-        },
-        {
-          "type": "paragraph",
-          "text": "Removing ranked-choice voting decreased scores by 2.4 points with Cohen's dz of 1.20, a large effect that demonstrates the value of sophisticated stakeholder preference aggregation over naive averaging. While this effect is smaller in magnitude than those of plasticity and duplication, it remains substantial enough to be practically important in real-world applications where stakeholder buy-in often determines whether solutions can actually be implemented. The ranked-choice mechanism appears particularly valuable in scenarios with significant preference divergence across stakeholders, where simple averaging can produce compromise solutions that satisfy no one rather than identifying strategies that balance competing concerns effectively. The statistical significance of this effect despite smaller magnitude confirms that even mechanisms with moderate effect sizes contribute reliably to system performance."
-        },
-        {
-          "type": "paragraph",
-          "text": "Token penalty removal resulted in the smallest but still significant deficit of 2.2 points with Cohen's dz of 1.63. This large effect confirms that explicit compute constraints meaningfully improve system performance, likely by forcing more concise and focused strategy presentations that judges find clearer and more actionable than verbose alternatives. The fact that removing penalties hurts rather than helps performance, despite allowing longer outputs, suggests that verbosity without corresponding substance reduces rather than enhances solution quality. This finding has important implications for language model deployment more broadly, indicating that constraints on output length may improve rather than compromise quality in many applications, contrary to the intuition that longer responses provide more comprehensive solutions."
-        },
-        {
-          "type": "paragraph",
-          "text": "Comparison to baseline language models without the Lark framework reveals substantial performance advantages. The base DeepSeek-V3.1 model, when applied directly to the decision-making tasks without evolutionary enhancement, achieved a mean rank of 10.6 and score of 23.7, significantly worse than Lark Full with a score difference of 5.7 points and Cohen's dz of 1.12. This very large effect demonstrates that the framework provides substantial value beyond simply using a capable language model, confirming that the evolutionary and stakeholder aggregation mechanisms contribute meaningfully to solution quality. GPT-4o and GPT-4.1, frontier models from a leading AI provider, achieved scores 4.0 and 2.5 points below Lark Full respectively, both differences statistically significant with large to very large effect sizes. These results suggest that Lark's biologically inspired approach provides advantages even compared to much larger and more capable language models when applied to multi-stakeholder decision-making tasks."
-        },
-        {
-          "type": "heading",
-          "id": "insights",
-          "text": "Key findings"
-        },
-        {
-          "type": "paragraph",
-          "text": "The experimental results yield several key insights that extend beyond the specific performance numbers to suggest broader principles for designing effective multi-agent LLM systems. The dominance of duplication and maturation as the largest single contributor to performance highlights the critical importance of mechanisms that can exploit promising solutions through refinement and specialization. This finding aligns with extensive work in evolutionary computation showing that a combination of global exploration and local exploitation generally outperforms pure random search or pure hill-climbing approaches. In the context of LLM agents, this suggests that systems should not simply generate diverse initial solutions and select the best, but should include mechanisms for iteratively improving and specializing top candidates."
-        },
-        {
-          "type": "paragraph",
-          "text": "The substantial contribution of plasticity reinforces the value of rapid within-generation adaptation that can respond to specific contextual features of decision scenarios. This mechanism bears similarity to few-shot learning or in-context learning in language models, where exposure to examples or context enables quick adaptation without weight updates. However, plasticity in Lark goes beyond passive context absorption to implement active refinement guided by explicit evaluation of current solution weaknesses. This active component may explain why plasticity provides benefits beyond those achieved by simply conditioning the language model on more extensive scenario context. Future work might explore whether plasticity effects can be amplified through more sophisticated refinement prompts or by using stronger language models for refinement operations."
-        },
-        {
-          "type": "paragraph",
-          "text": "The significant impact of ranked-choice voting validates the importance of sophisticated multi-stakeholder preference aggregation in scenarios with conflicting objectives. Simple averaging of preferences or scores, the approach used in many multi-objective optimization systems, discards important information about the structure of stakeholder preferences and can lead to solutions that represent poor compromises rather than genuine synthesis of diverse needs. The Borda count mechanism preserves this structural information through its reliance on ordinal rankings, enabling identification of solutions that may not maximize any single stakeholder's utility but achieve broad acceptability across stakeholders. This finding has implications for governance and decision support systems where stakeholder buy-in is as important as objective solution quality."
-        },
-        {
-          "type": "paragraph",
-          "text": "The effectiveness of token-based compute penalties challenges the conventional wisdom that longer, more detailed outputs necessarily provide higher quality solutions. Our results indicate that constraints encouraging brevity actually improve solution quality as judged by independent evaluators, suggesting that verbosity often reflects redundancy or lack of focus rather than comprehensive analysis. This finding aligns with human experience that concise communication often demonstrates deeper understanding than verbose exposition, as genuinely understanding a topic enables distillation to essential points. For LLM deployment, this result suggests that token budgets should be viewed not merely as cost-saving measures but as potentially quality-enhancing constraints that force models to prioritize the most important information."
-        },
-        {
-          "type": "paragraph",
-          "text": "The choice of discrete-generation evolutionary search over reinforcement learning approaches deserves reflection in light of the experimental success. Multi-stakeholder strategy generation fundamentally differs from typical reinforcement learning scenarios because it lacks the sequential state-action structure that RL methods are designed to exploit. Strategies are generated holistically and evaluated in their entirety rather than constructed through sequences of incremental decisions that can be individually credited or blamed. The sparse and ordinal nature of stakeholder feedback, provided as rankings rather than detailed error signals, makes gradient-based policy updates problematic. Evolutionary approaches handle these challenges naturally by treating each strategy as an atomic unit subject to selection and variation, without requiring decomposition into sequential decisions or continuous reward signals."
-        },
-        {
-          "type": "paragraph",
-          "text": "The integration of LLMs with evolutionary search represents a particularly powerful combination that leverages complementary strengths of both approaches. Language models bring semantic understanding, general knowledge, and the ability to generate coherent structured outputs in natural language. Evolutionary search provides systematic exploration of solution spaces, explicit multi-objective optimization, and mechanisms for accumulating improvements across generations without requiring differentiable objectives. Previous work has shown that LLM-driven evolutionary search can outperform reinforcement learning in domains like algorithm discovery, where the goal is to find effective procedures rather than to learn sequential policies. Our results extend this finding to the domain of multi-stakeholder decision-making, suggesting that evolution may be broadly preferable to RL for generation tasks that lack natural sequential structure."
-        },
-        {
-          "type": "paragraph",
-          "text": "The synthetic nature of our evaluation scenarios represents both a limitation and a deliberate methodological choice. Synthetic scenarios enabled the controlled experimentation necessary for isolating mechanism contributions and achieving sufficient statistical power for detecting meaningful effects. Real-world decision-making scenarios introduce confounds including ambiguous objectives, incomplete information, and stakeholder preferences that may shift during deliberation, factors that complicate rigorous evaluation. However, synthetic scenarios cannot capture the full richness and unpredictability of actual high-stakes decisions, and model performance on synthetic benchmarks may not fully predict real-world effectiveness. We view this work as establishing proof-of-concept feasibility that must be validated through subsequent studies in authentic decision-making contexts with actual stakeholders and consequential outcomes."
-        },
-        {
-          "type": "paragraph",
-          "text": "Future research directions emerge clearly from both the successes and limitations of the current work. Real-world validation studies with actual stakeholders in domains like policy formation, organizational planning, and healthcare resource allocation will test whether the performance advantages observed on synthetic scenarios translate to practical settings. Expanded model coverage including additional frontier LLMs and specialized multi-agent frameworks will clarify how Lark compares to the full range of available approaches. Scalability investigations with substantially larger stakeholder groups, more complex decision scenarios, and longer evolutionary runs will reveal whether the framework's benefits persist or amplify as problem complexity increases. Deeper interpretability analyses examining attention weights, pathway activations, and strategy evolution trajectories could illuminate what the system actually learns and how different mechanisms interact during search."
-        }
+        { "type": "heading", "id": "concept", "text": "The Concept" },
+        { "type": "paragraph", "text": "Lark is a biologically inspired decision-making framework that addresses the challenge of balancing multiple stakeholder perspectives in complex decision scenarios. By combining LLM-based reasoning with evolutionary principles, Lark generates aligned strategies that respect diverse stakeholder interests." },
+        { "type": "heading", "id": "architecture", "text": "Architecture" },
+        { "type": "paragraph", "text": "The system employs plasticity, duplication and maturation mechanisms, ranked-choice aggregation, and compute-aware optimization to evolve effective decision strategies across multiple cycles. This approach mirrors biological neural development while maintaining computational efficiency." },
+        { "type": "heading", "id": "applications", "text": "Applications" },
+        { "type": "paragraph", "text": "Our work, presented at NeurIPS Workshop 2025, demonstrates how multi-agent systems can handle complex trade-offs while maintaining transparency and stakeholder alignment. The framework has applications across healthcare policy, resource allocation, and organizational decision-making." }
       ]
     },
     {
       "id": "geneattentionnet",
-      "title": "GeneAttentionNet",
-      "description": "Attention-based architecture for interpretable gene expression classification on Alzheimer's disease.",
+      "title": "GeneAttentionNet: Biologically Informed Disease Classification",
+      "description": "A biologically informed neural architecture for Alzheimer's disease classification using gene expression data.",
       "category": "research",
-      "date": "Feb 4, 2026",
-      "author": "",
+      "date": "January 20, 2025",
+      "author": "Sunkalp Chandra, Gautham Korrapati",
+      "image": "geneattentionnet.png",
       "toc": [
-        { "id": "architecture", "title": "Model architecture" },
-        { "id": "biological-priors", "title": "Biological priors" },
-        { "id": "performance", "title": "Performance results" },
-        { "id": "insights", "title": "Key insights" }
+        { "id": "motivation", "title": "Motivation" },
+        { "id": "innovation", "title": "Innovation" },
+        { "id": "future", "title": "Future Directions" }
       ],
       "content": [
-        {
-          "type": "paragraph",
-          "text": "Alzheimer's disease represents one of the most pressing public health challenges of the 21st century, affecting more than 55 million people globally and accounting for the majority of dementia cases worldwide. This chronic neurodegenerative condition is characterized by progressive cognitive decline, memory dysfunction, and behavioral changes, with underlying neuropathological features including amyloid-beta plaque deposition, tau neurofibrillary tangles, and extensive neuronal loss in critical brain regions. Despite decades of intensive research and the development of various diagnostic biomarkers based on neuroimaging and cerebrospinal fluid analysis, early and affordable diagnosis remains elusive. Traditional diagnostic methods face significant limitations including invasiveness, high costs, limited accessibility in many regions, and concerns about patient privacy and comfort. Gene expression profiling of brain tissue offers a complementary and potentially transformative approach to understanding and diagnosing Alzheimer's disease at the molecular level."
-        },
-        {
-          "type": "paragraph",
-          "text": "Transcriptomic data obtained from microarray analysis provides a comprehensive snapshot of gene activity across thousands of genes simultaneously, capturing the molecular state of tissues in ways that traditional diagnostic methods cannot. The availability of large-scale public repositories like the NCBI Gene Expression Omnibus has democratized access to these valuable datasets, enabling researchers worldwide to develop and validate computational approaches for disease classification and biomarker discovery. Among these datasets, GSE33000 stands out for its comprehensive coverage, including 1247 brain tissue samples from both Alzheimer's and control subjects, harvested from multiple brain regions known to be affected early in disease progression including the prefrontal cortex, superior frontal gyrus, and hippocampus. The dataset was generated using the Affymetrix Human Genome U133 Plus 2.0 Array platform and includes rich metadata encompassing diagnostic labels, Braak staging for neuropathological severity, age, and gender information."
-        },
-        {
-          "type": "heading",
-          "id": "architecture",
-          "text": "Model architecture"
-        },
-        {
-          "type": "paragraph",
-          "text": "Traditional approaches to analyzing gene expression data for disease classification have largely relied on standard machine learning methods that treat gene expression vectors as unstructured collections of features. These approaches range from simple linear classifiers and support vector machines to random forests and basic feedforward neural networks. While computationally efficient and often effective for prediction tasks, these methods fundamentally fail to capture the rich contextual relationships that exist between genes. In biological systems, genes do not function in isolation but rather participate in complex regulatory networks, signaling pathways, and protein interaction cascades. The expression level of any single gene must be interpreted in the context of its network neighbors, upstream regulators, and downstream targets. GeneAttentionNet addresses this fundamental limitation by treating gene expression profiles not as fixed feature vectors but as sequences of related signals where attention mechanisms can learn which contextual relationships matter for disease classification."
-        },
-        {
-          "type": "paragraph",
-          "text": "The architecture begins by projecting the input gene expression vector, which contains 1247 normalized expression values corresponding to carefully selected genes, into a lower-dimensional latent space of 128 dimensions. This initial projection serves multiple purposes beyond simple dimensionality reduction. It creates a distributed representation where each dimension potentially captures combinations of related gene activities rather than single gene measurements. It regularizes the model by constraining the effective capacity of subsequent layers, helping to prevent overfitting on the limited training data available. It provides a computational bottleneck that forces the model to learn compressed representations that capture only the most relevant aspects of gene expression patterns for Alzheimer's classification. The projection is implemented as a simple linear transformation with learned weights, allowing the model to determine automatically which combinations of input genes are most informative for constructing the latent representation."
-        },
-        {
-          "type": "paragraph",
-          "text": "Following projection into latent space, a crucial architectural innovation involves restructuring the 128-dimensional embedding into a sequence of patch tokens, inspired by the success of transformer architectures in natural language processing and computer vision. Rather than treating the embedding as a single monolithic vector, we partition it into four non-overlapping 128-dimensional tokens through learned linear transformations. This tokenization process creates a quasi-sequential structure where each token can be thought of as representing a distinct aspect or context of the overall gene expression profile. In biological terms, different tokens might correspond to different functional modules, regulatory programs, or cellular processes that collectively determine disease state. The tokenization is crucial because it enables the subsequent attention mechanisms to model interactions between these different functional contexts, essentially allowing the network to learn that certain combinations of pathway activities are particularly diagnostic."
-        },
-        {
-          "type": "paragraph",
-          "text": "The core of GeneAttentionNet consists of a custom multi-head self-attention mechanism operating on the tokenized gene embeddings. Self-attention, the fundamental operation underlying transformer architectures, enables each token to gather information from all other tokens in a context-dependent manner. In the standard formulation, self-attention computes three projections for each token: queries representing what information the token seeks, keys representing what information each token offers, and values representing the actual information to be aggregated. The similarity between a token's query and all other tokens' keys determines how much each value contributes to that token's updated representation. By implementing this operation with multiple independent heads, each with its own learned projection matrices, the model can simultaneously attend to different types of relationships between gene expression patterns."
-        },
-        {
-          "type": "paragraph",
-          "text": "Our implementation employs four attention heads, each potentially specializing in different aspects of gene-gene relationships. One head might learn to identify co-regulated gene sets that are typically activated or suppressed together. Another might focus on antagonistic relationships where high expression of certain genes correlates with low expression of others. A third could capture temporal or causal relationships, identifying genes whose expression levels predict subsequent changes in other genes' expression. The fourth might encode higher-order interactions involving three or more genes that collectively determine disease state. The exact specialization of each head emerges automatically during training rather than being pre-specified, with the model learning whatever decomposition of attention patterns proves most useful for classification. The outputs from all four heads are concatenated and passed through a learned projection layer to produce the final contextualized gene representation."
-        },
-        {
-          "type": "paragraph",
-          "text": "The attention mechanism as described so far operates as a general-purpose relationship learning device without incorporating domain knowledge about gene function or regulation. While powerful, this generic approach risks wasting model capacity learning relationships that are biologically implausible or spurious correlations in the training data that do not reflect genuine causal relationships. To address this limitation and to enhance model interpretability, GeneAttentionNet augments the base attention architecture with three forms of biological prior knowledge that guide learning toward biologically meaningful patterns. These priors do not replace data-driven learning but rather constrain and inform it, embodying a hybrid approach that combines the flexibility of deep learning with the structure imposed by decades of biological research."
-        },
-        {
-          "type": "heading",
-          "id": "biological-priors",
-          "text": "Biological priors"
-        },
-        {
-          "type": "paragraph",
-          "text": "The Dynamic Pathway Gate represents the first form of biological knowledge integration, leveraging curated pathway databases that catalog which genes participate in specific biological processes and signaling cascades. The KEGG database, one of the most comprehensive repositories of biological pathway information, provides detailed maps of metabolic pathways, signal transduction cascades, and regulatory networks implicated in various diseases including Alzheimer's. For each well-characterized pathway relevant to neurodegeneration, we create a binary gene mask indicating which genes in our expression panel participate in that pathway. Rather than using these masks as simple filters, GeneAttentionNet learns a gating mechanism that assigns sample-specific attention weights to each pathway, essentially determining how much each pathway's activity should contribute to the classification decision for each individual patient sample."
-        },
-        {
-          "type": "paragraph",
-          "text": "The pathway gate implementation projects the latent gene embedding through a learned transformation to produce per-pathway scores that reflect the estimated relevance of each pathway for the current sample. These scores are normalized using softmax to create a probability distribution over pathways, ensuring that the total pathway contribution sums to one while allowing the model to strongly emphasize certain pathways for particular samples. The pathway-specific representations are computed by element-wise multiplication of the gene embedding with each pathway's binary mask, isolating the expression values of genes participating in that pathway. These masked representations are then weighted by the learned pathway scores and aggregated to produce a pathway-informed representation that emphasizes the biological processes most relevant for classification. This approach enables the model to adapt its interpretation strategy to different patient profiles, potentially identifying disease subtypes characterized by dysregulation of different molecular pathways."
-        },
-        {
-          "type": "paragraph",
-          "text": "The Protein-Protein Interaction masked attention mechanism implements a second form of biological constraint by restricting which genes can attend to each other based on known physical interactions between their protein products. The STRING database compiles protein-protein interaction data from multiple sources including experimental studies, computational predictions, and text-mining of scientific literature, providing confidence scores for millions of potential interactions. For our gene panel, we extracted the high-confidence protein interaction network and use it to construct an interaction mask that specifies which gene pairs are allowed to attend to each other. When computing attention scores, we apply this mask by setting attention weights to zero for gene pairs without known protein interactions, effectively restricting the attention mechanism to biologically plausible relationships where there is evidence for direct molecular communication."
-        },
-        {
-          "type": "paragraph",
-          "text": "Implementation of PPI-masked attention requires careful consideration of how to map between different representational spaces in the network. The attention mechanism operates on tokenized embeddings in the 128-dimensional latent space, while the PPI network is defined over the original 1247-dimensional gene space. We address this mismatch by projecting the latent embeddings back to gene space before applying the PPI mask, computing masked attention scores in gene space, and then projecting the resulting attended representations back to latent space for further processing. This back-and-forth projection adds computational cost but ensures that the biological constraints are applied at the appropriate level of abstraction. The PPI masking provides two key benefits beyond improved prediction accuracy: it dramatically reduces the effective parameter space that the attention mechanism must search, helping to prevent overfitting on limited training data, and it makes the learned attention patterns more interpretable since strong attention weights necessarily correspond to gene pairs with known biological relationships."
-        },
-        {
-          "type": "paragraph",
-          "text": "The optional Braak-Aware attention mechanism introduces stage-conditional modulation of attention weights based on the neuropathological staging of Alzheimer's progression. The Braak staging system classifies the spatial distribution of neurofibrillary tangles into six stages that correlate with disease severity and cognitive decline. Different genes and molecular pathways are known to be particularly relevant at different disease stages, with early stages characterized by dysfunction in specific hippocampal subregions and later stages involving widespread cortical degeneration. The Braak-aware attention module learns to modulate attention weights in a stage-specific manner by incorporating Braak stage information as an additional input. For each attention head, we compute stage-specific bias terms that are added to the standard attention scores, allowing the model to emphasize different gene-gene relationships depending on disease stage."
-        },
-        {
-          "type": "paragraph",
-          "text": "Implementation of stage conditioning requires careful handling during both training and inference. During training, each sample in the dataset includes its Braak stage as metadata, allowing the model to learn how attention patterns should vary across the progression continuum. The stage-specific biases are learned through gradient descent just like other model parameters, with the training objective encouraging the model to find stage-dependent attention patterns that improve classification accuracy. During inference on new samples, Braak stage information may not be available since determining stage typically requires post-mortem neuropathological examination. To handle this situation, we can either omit the Braak-aware component during inference, use predicted stage based on other clinical features, or explore all possible stage assignments and ensemble the predictions. The stage-aware mechanism provides a form of structured inductive bias that encodes the known progression of molecular changes during Alzheimer's development."
-        },
-        {
-          "type": "paragraph",
-          "text": "The final architecture combines all these components into a unified classification pipeline. The pathway-gated representations, the PPI-masked attention outputs, and the standard self-attention results are concatenated to form a comprehensive representation that integrates both data-driven learning and domain knowledge. This concatenated representation is passed through a feedforward classification head consisting of two fully-connected layers with ReLU activations and dropout for regularization. The first fully-connected layer expands to 256 dimensions, providing capacity for learning complex nonlinear combinations of the input features. Dropout with probability 0.3 is applied after the ReLU activation to prevent overfitting by randomly zeroing a fraction of activations during training. The second fully-connected layer projects down to a single output dimension representing the classification logit that is converted to a probability through the sigmoid function. This final probability represents the model's confidence that the input sample corresponds to Alzheimer's disease rather than healthy control status."
-        },
-        {
-          "type": "heading",
-          "id": "performance",
-          "text": "Performance results"
-        },
-        {
-          "type": "paragraph",
-          "text": "GeneAttentionNet was trained on the GSE33000 dataset using a rigorous experimental protocol designed to provide reliable estimates of classification performance while acknowledging the limitations imposed by modest dataset size. The 1247 samples were randomly partitioned into training and validation sets using an 80:20 split, stratified by disease label to ensure that both sets maintained the same proportion of Alzheimer's and control samples. This stratification is crucial for training stability and reliable performance estimation, preventing scenarios where the validation set might accidentally contain mostly easy or mostly difficult samples. All input gene expression vectors underwent preprocessing including min-max normalization per gene to scale values to the 0-1 range, z-score normalization to ensure zero mean and unit variance, and zero imputation for the small number of missing values in the dataset. These preprocessing steps help to stabilize training by ensuring that all genes contribute on similar scales rather than having a few high-variance genes dominate the learning process."
-        },
-        {
-          "type": "paragraph",
-          "text": "Training employed the Adam optimizer with an initial learning rate of 0.0001, chosen based on preliminary experiments suggesting that this rate provides stable convergence without excessive oscillation or slow progress. The loss function was binary cross-entropy with logits, appropriate for binary classification tasks and numerically stable compared to applying sigmoid before computing cross-entropy. Training proceeded for 100 epochs, a number chosen as a compromise between computational constraints and the desire for thorough optimization. Early stopping based on validation accuracy was implemented to prevent overfitting, saving the model checkpoint that achieved the best validation performance rather than simply using the final epoch's parameters. Gradient clipping with maximum norm 0.7 was applied to prevent occasional instability caused by large gradient updates, particularly in early training when the model parameters are far from optimal values."
-        },
-        {
-          "type": "paragraph",
-          "text": "Over the course of training, GeneAttentionNet demonstrated clear learning progress as evidenced by steadily decreasing training loss and increasing training accuracy. The training loss dropped from an initial value around 20 down to approximately 2 by the end of 100 epochs, indicating that the model successfully learned to fit the training data. Training accuracy reached 98.47 percent, demonstrating excellent performance on the training set. However, validation metrics revealed more complex dynamics that deserve careful interpretation. Validation loss initially decreased but began increasing in later epochs, a classic signature of overfitting where the model begins to memorize training-specific patterns that do not generalize to held-out data. Validation accuracy showed similar trends, initially improving but then stagnating and fluctuating in later training epochs. These patterns reflect the fundamental challenge of training complex models on relatively small datasets where the number of model parameters is large compared to the number of training examples."
-        },
-        {
-          "type": "paragraph",
-          "text": "Despite evidence of overfitting in the training curves, the absolute level of validation performance and the comparison to baseline methods demonstrate that GeneAttentionNet achieves meaningful generalization. The key comparisons are to a standard multilayer perceptron architecture, which represents a strong baseline for structured tabular data like gene expression, and to Random Forest, a classical machine learning algorithm known for good performance on high-dimensional data with complex interactions. The MLP baseline, trained with identical preprocessing and optimization settings but lacking the attention mechanisms and biological priors of GeneAttentionNet, achieved training accuracy of 90.5 percent, substantially lower than GeneAttentionNet's 98.47 percent. This 8 percent improvement demonstrates that the architectural innovations in GeneAttentionNet provide genuine value for learning from gene expression data beyond what standard neural network architectures can achieve."
-        },
-        {
-          "type": "paragraph",
-          "text": "The comparison to Random Forest reveals even more dramatic performance differences, with Random Forest achieving only 61.21 percent accuracy that remained essentially constant throughout training. This poor performance from a typically strong baseline algorithm suggests that the gene expression classification task presents challenges that Random Forest's ensemble of decision trees cannot adequately address. Decision trees naturally handle nonlinear relationships and feature interactions, so the Random Forest's failure indicates that the relevant patterns in gene expression data may require more sophisticated function approximation than piecewise constant decision boundaries can provide. The 38 percent improvement of GeneAttentionNet over Random Forest represents a very large effect size that would be clearly noticeable in practical applications, potentially making the difference between a diagnostic tool that is clinically useful versus one that performs barely better than chance."
-        },
-        {
-          "type": "paragraph",
-          "text": "Interpreting these results requires careful consideration of what the different metrics and comparisons reveal. The high training accuracy of 98.47 percent demonstrates that GeneAttentionNet has sufficient capacity and appropriate inductive biases to learn complex patterns in gene expression data that distinguish Alzheimer's from control samples. The comparison to simpler baselines shows that this learning is not trivial but rather requires the specific architectural features and biological constraints that GeneAttentionNet provides. The overfitting evident in validation curves indicates that the current dataset size of 1247 samples, while large by biological standards, remains modest for training neural networks with thousands of parameters. Future work with larger datasets or stronger regularization may allow better generalization. However, even with current limitations, the model achieves meaningful learning of disease-relevant patterns, as evidenced by its superiority over strong baselines and its ability to leverage biological priors to guide attention toward known regulatory relationships."
-        },
-        {
-          "type": "heading",
-          "id": "insights",
-          "text": "Key insights"
-        },
-        {
-          "type": "paragraph",
-          "text": "The success of attention mechanisms in GeneAttentionNet provides empirical support for a fundamental hypothesis about gene expression analysis: that contextual relationships between genes are as important as individual gene expression levels for disease classification. Traditional feature-based approaches to genomic analysis implicitly assume that each gene's expression level contributes independently to disease state, possibly with learned weights reflecting relative importance but without accounting for how the interpretation of one gene's expression should depend on the expression levels of related genes. The attention mechanism explicitly models these contextual dependencies, allowing the classification decision to be based on patterns of co-expression, regulatory relationships, and pathway-level coordination rather than just individual gene dysregulation. The fact that attention-based models substantially outperform feature-based baselines validates this emphasis on contextual relationships."
-        },
-        {
-          "type": "paragraph",
-          "text": "The integration of biological prior knowledge through pathway gates, PPI masks, and stage-aware attention demonstrates a productive middle ground between purely data-driven machine learning and manually engineered feature selection. Pure machine learning approaches treat all gene pairs as equally likely to interact and all genes as equally likely to be relevant, learning relationships purely from correlations in training data. This flexibility is powerful but can lead to overfitting on spurious correlations, especially when training data is limited compared to the hypothesis space. Manual feature engineering, where domain experts select specific genes or pathways to include based on prior biological knowledge, avoids spurious correlations but may miss novel patterns and cannot adapt to new data. GeneAttentionNet's hybrid approach allows the model to discover patterns in data while being guided by biological constraints that make implausible relationships unlikely and encourage attention to known regulatory connections."
-        },
-        {
-          "type": "paragraph",
-          "text": "The interpretability advantages provided by structured attention and biological priors extend beyond simply explaining model predictions to enabling hypothesis generation about disease mechanisms. By examining which attention weights are largest for correctly classified Alzheimer's samples, researchers can identify specific gene-gene relationships that appear particularly diagnostic. When these relationships correspond to known protein-protein interactions enforced by the PPI mask, they suggest that the physical interaction between those proteins plays a role in disease pathology. When pathway gates consistently assign high weights to particular biological pathways, it indicates that dysregulation of those pathways is a common feature across Alzheimer's patients. These mechanistic insights would be difficult or impossible to extract from black-box classifiers that achieve high accuracy without providing interpretable intermediate representations."
-        },
-        {
-          "type": "paragraph",
-          "text": "The substantial performance gap between GeneAttentionNet and simpler baselines highlights the importance of inductive biases that match the structure of the problem domain. The MLP baseline, despite having millions of parameters and the ability to approximate any function given sufficient data, achieves significantly worse training accuracy than GeneAttentionNet. This is not because MLPs are fundamentally incapable of learning the relevant patterns but rather because the space of possible functions they could learn is so vast that finding the right function from limited training data becomes extremely difficult. GeneAttentionNet narrows this search space through architectural constraints that embody assumptions about how gene expression data should be processed: that genes should be considered in groups or contexts rather than individually, that known regulatory relationships should be emphasized, that pathway-level organization matters. These constraints, far from limiting model capacity in problematic ways, actually improve learning by focusing capacity on biologically plausible hypotheses."
-        },
-        {
-          "type": "paragraph",
-          "text": "The challenges revealed by validation curve analysis, particularly the evidence of overfitting in later training epochs, point to important directions for future work. The dataset size of 1247 samples, while substantial for gene expression studies, remains modest by deep learning standards where millions of training examples are common. Several approaches could address this limitation and potentially improve generalization. Data augmentation techniques adapted to gene expression, such as adding small amounts of noise to simulate biological and technical variation, might effectively increase training set size. Transfer learning from related tasks, such as classification of other neurodegenerative diseases or prediction of disease-relevant molecular phenotypes, could provide useful initializations that reduce the amount of Alzheimer-specific training data needed. More sophisticated regularization schemes, such as pathway-level dropout that temporarily removes entire biological processes rather than individual neurons, might better match the structure of the problem and prevent overfitting more effectively than standard dropout."
-        }
+        { "type": "heading", "id": "motivation", "text": "Motivation" },
+        { "type": "paragraph", "text": "GeneAttentionNet represents a new approach to disease classification that respects the biological reality of gene interactions. Traditional machine learning models often treat genes as independent features, ignoring the complex regulatory networks that govern cellular behavior." },
+        { "type": "heading", "id": "innovation", "text": "Innovation" },
+        { "type": "paragraph", "text": "Our architecture combines attention-based tokenization, pathway gating, and protein-interaction-masked heads to capture gene-level context while maintaining biological interpretability. This approach improves accuracy over baseline models while enabling trustworthy, mechanism-aware predictions." },
+        { "type": "heading", "id": "future", "text": "Future Directions" },
+        { "type": "paragraph", "text": "Presented at MIT URTC 2025, this work opens new avenues for transcriptomic disease modeling and biomedical research. We're continuing to refine the architecture and explore applications across other neurodegenerative diseases." }
+      ]
+    },
+    {
+      "id": "cortiforge",
+      "title": "CortiForge: Modeling Cortical Microcircuits",
+      "description": "An open-source, biologically grounded framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
+      "category": "research",
+      "date": "November 1, 2025",
+      "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
+      "image": "cortiforge.png",
+      "toc": [
+        { "id": "background", "title": "Background" },
+        { "id": "framework", "title": "The Framework" },
+        { "id": "impact", "title": "Research Impact" }
+      ],
+      "content": [
+        { "type": "heading", "id": "background", "text": "Background" },
+        { "type": "paragraph", "text": "Understanding cortical microcircuits is fundamental to neuroscience research, yet existing tools often lack the integration between computational models and experimental data. CortiForge addresses this gap with a comprehensive framework for biologically realistic circuit modeling." },
+        { "type": "heading", "id": "framework", "text": "The Framework" },
+        { "type": "paragraph", "text": "Through standardized neuron libraries and AllenSDK integration, CortiForge provides end-to-end workflows that enable interpretable, validated circuit models. Researchers can build models that bridge theory, experiments, and neuroscience research at scale reproducibly." },
+        { "type": "heading", "id": "impact", "text": "Research Impact" },
+        { "type": "paragraph", "text": "Submitted to ICLR 2026, CortiForge represents our commitment to open science and reproducible neuroscience research. By making sophisticated modeling tools accessible to the broader research community, we hope to accelerate progress in understanding brain function." }
       ]
     }
   ]
