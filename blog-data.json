@@ -1,9 +1,9 @@
 {
   "posts": [
     {
-      "id": "self-driving-codebases",
-      "title": "Towards self-driving codebases",
-      "description": "We're making a part of our multi-agent research harness available to try today in preview.",
+      "id": "cortiforge",
+      "title": "CortiForge",
+      "description": "Modeling cortical microcircuits that links spiking neural network simulations with experimental brain data",
       "category": "research",
       "date": "Feb 5, 2026",
       "author": "",
@@ -227,9 +227,9 @@
     {
       "id": "remembrance",
       "title": "Introducing Remembrance",
-      "description": "As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own.",
+      "description": "Towards healthy longevity that preserves dignity by recalling and storing cherished memories",
       "category": "product",
-      "date": "Jan 10, 2026",
+      "date": "July 10, 2025",
       "author": "",
       "toc": [
         { "id": "agent-improvements", "title": "How agents are improving" },
