@@ -565,27 +565,12 @@ main {
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   width: fit-content;
   overflow: visible;
 }
 
 .footer-link:hover {
   color: #111;
-}
-
-.footer-arrow {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  opacity: 0.5;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-}
-
-.footer-link:hover .footer-arrow {
-  opacity: 1;
-  transform: translate(1px, -1px);
 }
 
 .footer-bottom {
