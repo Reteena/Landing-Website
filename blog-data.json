@@ -1,282 +1,190 @@
 {
   "posts": [
     {
-      "id": "remembrance-ai-companion",
-      "title": "Remembrance AI memory companion for Alzheimer's patients",
-      "description": "Most conventional interventions missed what patients and families actually grieve. The loss of shared moments together, inside jokes, and humorous nicknames.",
+      "id": "remembrance-ai-therapy",
+      "title": "Remembrance",
+      "description": "AI therapeutic service providing reminiscence therapy through interconnected memory knowledge graphs.",
       "category": "product",
       "date": "Feb 5, 2026",
       "author": "",
-      "toc": [
-        { "id": "what-we-missed", "title": "What conventional care missed" },
-        { "id": "how-it-works", "title": "How Remembrance works" },
-        { "id": "knowledge-graphs", "title": "Knowledge graphs that mirror memory" },
-        { "id": "beta-launch", "title": "Private beta launching soon" }
-      ],
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Most conventional interventions missed what patients and families actually grieve. The loss of shared moments together, inside jokes, and humorous nicknames."
-        },
-        {
-          "type": "heading",
-          "id": "what-we-missed",
-          "text": "What conventional care missed"
-        },
-        {
-          "type": "paragraph",
-          "text": "Traditional Alzheimer's care focuses on managing symptoms. Medication, safety protocols, structured routines. But families told us something different. They weren't just losing a person to cognitive decline. They were losing the texture of their relationship. The way their mother used to call them by their childhood nickname. The story she told at every Thanksgiving. The small rituals that made them who they were together."
-        },
-        {
-          "type": "heading",
-          "id": "how-it-works",
-          "text": "How Remembrance works"
-        },
-        {
-          "type": "paragraph",
-          "text": "Remembrance is an emotionally intelligent AI that delivers reminiscence therapy through natural conversations. It gently prompts patients to recall and share their cherished memories. A conversation might start with a photo from decades ago. Or a question about their wedding day. Or the name of their first pet. The AI listens, understands context, and weaves connections between memories that might seem unrelated."
-        },
-        {
-          "type": "heading",
-          "id": "knowledge-graphs",
-          "text": "Knowledge graphs that mirror memory"
-        },
-        {
-          "type": "paragraph",
-          "text": "We store memories as interconnected data in a knowledge graph structure that mirrors how human memory actually works. Not as isolated facts in a database. But as a web of associations. The way your brain connects the smell of pine trees to Christmas mornings. Or how hearing a specific song brings back an entire summer. These connections matter because they help patients maintain their sense of identity even as cognitive decline progresses."
-        },
-        {
-          "type": "heading",
-          "id": "beta-launch",
-          "text": "Private beta launching soon"
-        },
-        {
-          "type": "paragraph",
-          "text": "We're preparing for a private beta launch. Early tests with families showed something we didn't expect. Patients who struggled to remember what happened yesterday could recall vivid details from fifty years ago when prompted the right way. The system doesn't just help them remember. It helps them feel like themselves again."
-        }
-      ]
+      "toc": [],
+      "content": []
     },
     {
-      "id": "low-field-mri-framework",
-      "title": "Making Alzheimer's diagnosis accessible with low-field MRI",
-      "description": "We enhanced low-field MRI scans to achieve 96% diagnostic accuracy on affordable scanners, making early detection accessible.",
+      "id": "low-field-mri",
+      "title": "Low field MRI framework",
+      "description": "Published framework for low field MRI imaging applications.",
+      "category": "research",
+      "date": "Jan 28, 2026",
+      "author": "",
+      "toc": [],
+      "content": []
+    },
+    {
+      "id": "cortinet-framework",
+      "title": "CortiNet",
+      "description": "Framework for reproducible cortical microcircuit modeling with spiking neural networks.",
       "category": "research",
       "date": "Jan 27, 2026",
-      "author": "Reteena Team",
+      "author": "",
       "toc": [
-        { "id": "accessibility-problem", "title": "The accessibility problem" },
-        { "id": "deep-learning-approach", "title": "Deep learning for low-field enhancement" },
-        { "id": "diagnostic-accuracy", "title": "96% accuracy on affordable scanners" },
-        { "id": "published-results", "title": "Published at IEEE BigData 2024" }
+        { "id": "introduction", "title": "Introduction to cortical modeling" },
+        { "id": "validation", "title": "Validation against experimental data" },
+        { "id": "neuron-models", "title": "Neuron and synapse models" },
+        { "id": "results", "title": "Experimental results" }
       ],
       "content": [
         {
           "type": "paragraph",
-          "text": "High-field MRI scanners are expensive. They require specialized facilities. They're concentrated in wealthy urban areas. Most people who need early Alzheimer's screening can't access them."
+          "text": "CortiNet provides an open-source framework to design, validate, and analyze models of cortical microcircuits against experimental data from the Allen Brain Observatory."
         },
         {
           "type": "heading",
-          "id": "accessibility-problem",
-          "text": "The accessibility problem"
+          "id": "introduction",
+          "text": "Introduction to cortical modeling"
         },
         {
           "type": "paragraph",
-          "text": "The standard approach to Alzheimer's diagnosis relies on high-field MRI scanners. These machines cost millions of dollars. They need special cooling systems and shielded rooms. In rural areas or developing countries, getting an MRI might mean traveling hundreds of miles. By the time symptoms are severe enough to justify that journey, early intervention windows have closed."
+          "text": "The framework implements standard neurons like Adaptive Exponential Integrate-and-Fire (AdEx) and Leaky Integrate-and-Fire (LIF) models with programmatic access to in-vivo electrophysiology datasets."
         },
         {
           "type": "heading",
-          "id": "deep-learning-approach",
-          "text": "Deep learning for low-field enhancement"
+          "id": "validation",
+          "text": "Validation against experimental data"
         },
         {
           "type": "paragraph",
-          "text": "We built a deep learning framework that enhances low-field MRI scans for Alzheimer's diagnosis. The system uses brain segmentation and volumetric analysis to extract clinically meaningful structural information from lower-quality images. Low-field scanners produce noisier data. But our models learned to identify the patterns that matter for diagnosis even in that noise."
+          "text": "Using data from mouse visual cortex recordings (Session ID 715093703), the framework validates spiking neural networks against firing rates, inter-spike intervals, and local field potential power spectra."
         },
         {
           "type": "heading",
-          "id": "diagnostic-accuracy",
-          "text": "96% accuracy on affordable scanners"
+          "id": "neuron-models",
+          "text": "Neuron and synapse models"
         },
         {
           "type": "paragraph",
-          "text": "The framework achieved 96% diagnostic accuracy on low-strength scanners. That's comparable to conventional high-field MRI while being faster and more cost-effective. We can now provide accessible neurodegenerative assessment in settings where high-field MRI would never be viable. Community health centers. Small hospitals. Mobile diagnostic units."
+          "text": "The framework includes demonstrations of synaptic plasticity via STDP, neuromodulation effects from dopamine and acetylcholine, and cognitive task performance using working memory paradigms."
         },
         {
           "type": "heading",
-          "id": "published-results",
-          "text": "Published at IEEE BigData 2024"
+          "id": "results",
+          "text": "Experimental results"
         },
         {
           "type": "paragraph",
-          "text": "Our work was published at IEEE BigData 2024. The framework is open source. We want other researchers to build on this. To adapt it for different neurodegenerative conditions. To deploy it in settings where early detection could change outcomes."
+          "text": "A pilot experiment with 120 excitatory and 30 inhibitory neurons reproduced key statistical properties of cortical circuits including irregular spiking patterns and network-level oscillations in the gamma band."
         }
       ]
     },
     {
-      "id": "lark-multi-agent",
-      "title": "Lark biologically inspired decision-making for AI agents",
-      "description": "We built a framework that combines LLM reasoning with evolutionary multi-agent systems to balance stakeholder trade-offs while staying compute-efficient.",
+      "id": "lark-multi-stakeholder",
+      "title": "Lark",
+      "description": "Biologically inspired neuroevolution framework for multi-stakeholder LLM agent systems.",
       "category": "research",
       "date": "Jan 15, 2026",
-      "author": "Reteena Team",
+      "author": "",
       "toc": [
-        { "id": "multi-stakeholder-problem", "title": "The multi-stakeholder problem" },
-        { "id": "biological-inspiration", "title": "Four mechanisms from biology" },
-        { "id": "evolutionary-search", "title": "Evolutionary search over reinforcement learning" },
-        { "id": "neurips-results", "title": "Published at NeurIPS Workshop 2025" }
+        { "id": "approach", "title": "Four biological mechanisms" },
+        { "id": "evaluation", "title": "Evaluation results" },
+        { "id": "comparison", "title": "Model comparisons" },
+        { "id": "insights", "title": "Key findings" }
       ],
       "content": [
         {
           "type": "paragraph",
-          "text": "Current LLM-based agent systems struggle with three problems. They generate verbose redundant outputs that waste compute. They explore alternative strategies poorly. They can't balance conflicting stakeholder objectives."
+          "text": "Lark couples LLM-driven reasoning with evolutionary search to address verbosity, stakeholder trade-offs, and compute constraints in multi-agent systems."
         },
         {
           "type": "heading",
-          "id": "multi-stakeholder-problem",
-          "text": "The multi-stakeholder problem"
+          "id": "approach",
+          "text": "Four biological mechanisms"
         },
         {
           "type": "paragraph",
-          "text": "Real decisions involve trade-offs between different groups with different priorities. A healthcare policy that maximizes coverage might strain budgets. A product roadmap that satisfies power users might alienate casual customers. Traditional AI systems optimize for a single objective. That doesn't match how decisions actually get made."
+          "text": "The system integrates plasticity for context-sensitive refinements, duplication and maturation for modular specialization, ranked-choice voting using Borda scoring, and token-based penalties rewarding brevity."
         },
         {
           "type": "heading",
-          "id": "biological-inspiration",
-          "text": "Four mechanisms from biology"
+          "id": "evaluation",
+          "text": "Evaluation results"
         },
         {
           "type": "paragraph",
-          "text": "Lark integrates four biologically inspired mechanisms. Plasticity for context-sensitive refinement within a generation. Duplication and maturation where high-performing strategies get copied and specialized. Ranked-choice stakeholder voting using influence-weighted Borda scoring. Compute-awareness through token-based penalties that reward brevity."
+          "text": "Across 30 rounds comparing 14 systems, Lark achieved mean rank 2.55 and composite score 29.4 out of 50, finishing top-3 in 80% of rounds while maintaining cost competitiveness at $0.016 per task."
         },
         {
           "type": "heading",
-          "id": "evolutionary-search",
-          "text": "Evolutionary search over reinforcement learning"
+          "id": "comparison",
+          "text": "Model comparisons"
         },
         {
           "type": "paragraph",
-          "text": "We chose discrete-generation evolutionary search over continuous reinforcement learning for good reasons. Multi-stakeholder strategy generation lacks the sequential state transitions RL needs. Stakeholder preferences provide sparse ordinal feedback that suits population-level selection better than gradient-based updates. LLM generation naturally aligns with population sampling where diverse proposals get evaluated holistically."
+          "text": "Ablation studies showed all four mechanisms contribute significantly. Removing duplication and maturation created the largest deficit with delta score of 3.5, followed by plasticity at 3.4, ranked-choice voting at 2.4, and token penalties at 2.2."
         },
         {
           "type": "heading",
-          "id": "neurips-results",
-          "text": "Published at NeurIPS Workshop 2025"
+          "id": "insights",
+          "text": "Key findings"
         },
         {
           "type": "paragraph",
-          "text": "Across 30 evaluation rounds comparing 14 systems, Lark Full achieved a mean rank of 2.55 and finished in the top 3 in 80% of rounds. It stayed cost-competitive with leading commercial models at $0.016 per task. Ablation studies confirmed all four mechanisms contribute significantly. Removing duplication and maturation showed the largest deficit. The work was published at NeurIPS Workshop 2025."
+          "text": "The framework operates as a discrete-generation evolutionary system rather than a Markov decision process, making it suitable for multi-stakeholder strategy generation where evaluation is holistic rather than sequential."
         }
       ]
     },
     {
       "id": "geneattentionnet",
-      "title": "GeneAttentionNet attention-based Alzheimer's classification",
-      "description": "We built a neural architecture that uses attention mechanisms to capture gene-level context for Alzheimer's disease classification from expression data.",
+      "title": "GeneAttentionNet",
+      "description": "Attention-based architecture for interpretable gene expression classification on Alzheimer's disease.",
       "category": "research",
-      "date": "Jan 10, 2026",
-      "author": "Reteena Team",
+      "date": "Jan 14, 2026",
+      "author": "",
       "toc": [
-        { "id": "gene-expression-challenge", "title": "The gene expression challenge" },
-        { "id": "attention-architecture", "title": "Attention mechanisms for genes" },
-        { "id": "biological-priors", "title": "Biological priors for interpretability" },
-        { "id": "mit-presentation", "title": "Presented at MIT URTC 2025" }
+        { "id": "architecture", "title": "Model architecture" },
+        { "id": "biological-priors", "title": "Biological priors" },
+        { "id": "performance", "title": "Performance results" },
+        { "id": "insights", "title": "Key insights" }
       ],
       "content": [
         {
           "type": "paragraph",
-          "text": "Traditional models treat gene expression as unstructured feature vectors. They miss the biological relationships between genes. The regulatory pathways. The protein interactions. The context that makes expression patterns meaningful."
+          "text": "GeneAttentionNet leverages attention mechanisms to learn contextual relationships between genes for Alzheimer's classification from high-dimensional gene expression data."
         },
         {
           "type": "heading",
-          "id": "gene-expression-challenge",
-          "text": "The gene expression challenge"
+          "id": "architecture",
+          "text": "Model architecture"
         },
         {
           "type": "paragraph",
-          "text": "Gene expression data for Alzheimer's classification is high-dimensional and complex. Thousands of genes with interdependent signals. Many contribute only marginally in isolation but hold significant predictive power when considered in context with regulatory pathways or co-expression networks. Standard feedforward models and dimensionality reduction fail to capture this nuance."
-        },
-        {
-          "type": "heading",
-          "id": "attention-architecture",
-          "text": "Attention mechanisms for genes"
-        },
-        {
-          "type": "paragraph",
-          "text": "GeneAttentionNet projects gene expression vectors into a lower-dimensional embedding space. Then processes them through custom multi-head self-attention mechanisms. This lets the network learn context-dependent interactions between genes. The architecture views gene vectors not as fixed blocks of features but as sequences of signals where attention models long-range dependencies."
+          "text": "The model projects gene expression vectors into low-dimensional embedding space, structures them through tokenization, and processes via custom multi-head self-attention mechanisms."
         },
         {
           "type": "heading",
           "id": "biological-priors",
-          "text": "Biological priors for interpretability"
+          "text": "Biological priors"
         },
         {
           "type": "paragraph",
-          "text": "We incorporated biological knowledge into the architecture. A Dynamic Pathway Gate that learns sample-specific weights over curated gene sets. A protein-protein interaction masked attention head that restricts attention to gene pairs with known physical interactions. These components bridge the gap between machine learning predictions and biological interpretability. The model achieved an 8% accuracy boost over baseline multilayer perceptrons and a 38% boost over random forest."
+          "text": "Integration includes a Dynamic Pathway Gate for sample-specific pathway weights, PPI-Masked Attention restricting attention to known protein interactions, and optional Braak-Aware attention for stage-specific gene expression patterns."
         },
         {
           "type": "heading",
-          "id": "mit-presentation",
-          "text": "Presented at MIT URTC 2025"
+          "id": "performance",
+          "text": "Performance results"
         },
         {
           "type": "paragraph",
-          "text": "The work was presented at MIT URTC 2025. We're preparing a preprint with full details. The approach shows promise for interpretable biologically informed AI in transcriptomic analysis. Future work will expand to multi-classification and regression-based formulations to model disease progression directly."
-        }
-      ]
-    },
-    {
-      "id": "cortiforge-framework",
-      "title": "CortiForge reproducible cortical circuit modeling at scale",
-      "description": "We built an open-source framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
-      "category": "research",
-      "date": "Dec 20, 2025",
-      "author": "Reteena Team",
-      "toc": [
-        { "id": "validation-gap", "title": "The experimental validation gap" },
-        { "id": "framework-design", "title": "End-to-end validation workflow" },
-        { "id": "allensdk-integration", "title": "Allen Brain Observatory integration" },
-        { "id": "iclr-submission", "title": "Submitted to ICLR 2026" }
-      ],
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Spiking neural networks provide biologically grounded models of cortical circuits. But few researchers validate their models against actual experimental data. The gap between simulation and empirical recordings stays wide."
+          "text": "On binary Alzheimer's classification using 1247 samples, the model achieved 98.47% training accuracy, demonstrating an 8% improvement over standard multilayer perceptrons and 38% boost over Random Forest."
         },
         {
           "type": "heading",
-          "id": "validation-gap",
-          "text": "The experimental validation gap"
+          "id": "insights",
+          "text": "Key insights"
         },
         {
           "type": "paragraph",
-          "text": "Mathematical descriptions for point-neuron models have existed for decades. Leaky integrate-and-fire neurons. Adaptive exponential models. Spike-timing-dependent plasticity rules. The challenge isn't creating new models. It's using them rigorously. Validating them against large-scale empirical neural datasets. Comparing simulated dynamics to real cortical activity."
-        },
-        {
-          "type": "heading",
-          "id": "framework-design",
-          "text": "End-to-end validation workflow"
-        },
-        {
-          "type": "paragraph",
-          "text": "CortiForge implements a complete workflow that connects user-defined spiking neural networks with iterative validation using in-vivo electrophysiology datasets. It provides tools for extraction, statistical comparison, and visualization of simulated and experimental data. The framework enables rapid detection of mismatches between model predictions and empirical observations. Supports iterative refinement of network parameters."
-        },
-        {
-          "type": "heading",
-          "id": "allensdk-integration",
-          "text": "Allen Brain Observatory integration"
-        },
-        {
-          "type": "paragraph",
-          "text": "The framework includes programmatic access to Allen Brain Observatory experimental recordings through the AllenSDK. Researchers can load spike trains, LFP recordings, and trial-averaged activity directly. Compare firing rates, inter-spike interval distributions, and power spectral densities. Validate models against the same quantitative metrics used in experimental neuroscience."
-        },
-        {
-          "type": "heading",
-          "id": "iclr-submission",
-          "text": "Submitted to ICLR 2026"
-        },
-        {
-          "type": "paragraph",
-          "text": "We submitted the work to ICLR 2026. The framework is open source. It includes standardized neuron libraries, modular demonstrations of cortical phenomena, and runnable examples of synaptic plasticity, cognitive performance, and neuromodulation. The goal is to lower barriers for rigorous reproducible spiking network research."
+          "text": "Multi-head attention on tokenized gene embeddings captured complex nonlinear dependencies between distant genes, bridging the gap between machine learning predictions and biological interpretability in transcriptomic analysis."
         }
       ]
     }
