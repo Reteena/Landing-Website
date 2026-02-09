@@ -282,14 +282,62 @@ html {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+}
+
+.hero-section::before,
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  pointer-events: none;
+  opacity: 0.3;
+  animation: chromaShift 8s ease-in-out infinite;
+}
+
+.hero-section::before {
+  left: 0;
   background: linear-gradient(
-    180deg,
-    rgba(255, 240, 220, 0.8) 0%,
-    rgba(255, 230, 240, 0.8) 25%,
-    rgba(230, 240, 255, 0.8) 50%,
-    rgba(240, 255, 230, 0.8) 75%,
-    rgba(255, 245, 220, 0.8) 100%
+    90deg,
+    rgba(255, 240, 220, 0.25) 0%,
+    rgba(255, 230, 240, 0.2) 25%,
+    rgba(240, 230, 255, 0.15) 50%,
+    rgba(230, 240, 255, 0.1) 75%,
+    transparent 100%
   );
+}
+
+.hero-section::after {
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(230, 255, 240, 0.25) 0%,
+    rgba(240, 255, 230, 0.2) 25%,
+    rgba(255, 245, 230, 0.15) 50%,
+    rgba(255, 235, 240, 0.1) 75%,
+    transparent 100%
+  );
+  animation-delay: -4s;
+}
+
+@keyframes chromaShift {
+  0%, 100% {
+    opacity: 0.3;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    opacity: 0.35;
+    filter: hue-rotate(10deg);
+  }
+  50% {
+    opacity: 0.25;
+    filter: hue-rotate(20deg);
+  }
+  75% {
+    opacity: 0.35;
+    filter: hue-rotate(10deg);
+  }
 }
 
 .hero-title {
