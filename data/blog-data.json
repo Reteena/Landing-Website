@@ -7,7 +7,7 @@
       "category": "product",
       "date": "January 15, 2026",
       "author": "Reteena Team",
-      "image": "remembrance.png",
+      "image": "image/remembrance.png",
       "toc": [
         { "id": "motivation", "title": "Understanding patient grief" },
         { "id": "approach", "title": "Reminiscence therapy design" },
@@ -34,7 +34,7 @@
       "category": "research",
       "date": "December 10, 2024",
       "author": "Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang",
-      "image": "lowfield.png",
+      "image": "image/lowfield.png",
       "toc": [
         { "id": "introduction", "title": "Introduction" },
         { "id": "methodology", "title": "Methodology" },
@@ -59,7 +59,7 @@
       "category": "research",
       "date": "December 5, 2025",
       "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
-      "image": "lark.png",
+      "image": "image/lark.png",
       "toc": [
         { "id": "concept", "title": "The Concept" },
         { "id": "architecture", "title": "Architecture" },
@@ -84,7 +84,7 @@
       "category": "research",
       "date": "January 20, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati",
-      "image": "geneattentionnet.png",
+      "image": "image/geneattentionnet.png",
       "toc": [
         { "id": "motivation", "title": "Motivation" },
         { "id": "innovation", "title": "Innovation" },
@@ -110,7 +110,7 @@
       "category": "research",
       "date": "November 1, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
-      "image": "cortiforge.png",
+      "image": "image/cortiforge.png",
       "toc": [
         { "id": "background", "title": "Background" },
         { "id": "framework", "title": "The Framework" },
