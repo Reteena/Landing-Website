@@ -55,7 +55,7 @@
     {
       "id": "lark",
       "title": "Multi-Stakeholder LLM Agents for Decision Making",
-      "description": "A biologically inspired decision making framework combining LLM reasoning with evolutionary stakeholder aware multi agent systems",
+      "description": "A biologically inspired decision making framework combining LLM reasoning with stakeholder aware multi agent systems",
       "category": "research",
       "date": "December 5, 2025",
       "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
