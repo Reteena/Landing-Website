@@ -3,7 +3,7 @@
     {
       "id": "remembrance",
       "title": "AI Memory Companion for Alzheimer's Patients",
-      "description": "Remembrance is an emotionally intelligent AI memory companion for Alzheimer's patients that delivers reminiscence therapy through natural conversations.",
+      "description": "Remembrance is an emotionally intelligent AI memory companion delivering conversational reminiscence therapy for Alzheimer’s patients.",
       "category": "product",
       "date": "January 15, 2026",
       "author": "Reteena Team",
@@ -30,7 +30,7 @@
     {
       "id": "low-field-mri",
       "title": "Accessible Alzheimer's Diagnosis",
-      "description": "Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis.",
+      "description": "Enhances low field MRI for Alzheimer’s diagnosis using deep learning brain segmentation and volumetric analysis.",
       "category": "research",
       "date": "December 10, 2024",
       "author": "Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang",
@@ -55,7 +55,7 @@
     {
       "id": "lark",
       "title": "Multi-Stakeholder LLM Agents for Decision Making",
-      "description": "A biologically inspired decision-making framework that combines LLM-based reasoning with an evolutionary, stakeholder-aware multi-agent system.",
+      "description": "A biologically inspired decision making framework combining LLM reasoning with evolutionary stakeholder aware multi agent systems",
       "category": "research",
       "date": "December 5, 2025",
       "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
@@ -80,7 +80,7 @@
     {
       "id": "geneattentionnet",
       "title": "Biologically Informed Disease Classification",
-      "description": "A biologically informed neural architecture for Alzheimer's disease classification using gene expression data.",
+      "description": "A biologically informed neural architecture for Alzheimer’s disease classification using gene expression data.",
       "category": "research",
       "date": "January 20, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati",
@@ -106,7 +106,7 @@
     {
       "id": "cortiforge",
       "title": "Modeling Cortical Microcircuits",
-      "description": "An open-source, biologically grounded framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
+      "description": "An open source biologically grounded framework modeling cortical microcircuits linking spiking simulations with experimental brain data.",
       "category": "research",
       "date": "November 1, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
