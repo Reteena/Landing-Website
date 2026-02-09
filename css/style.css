@@ -365,7 +365,7 @@ html {
 }
 
 .menu-divider {
-  width: 100%;
+  width: 80vw;
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
   margin: 6px 0 12px 0;
