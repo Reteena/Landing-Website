@@ -652,7 +652,6 @@ main {
   color: #111;
   margin: 0 0 8px 0;
   font-family: 'Manrope', Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 .footer-link {
@@ -661,7 +660,6 @@ main {
   text-decoration: none;
   transition: color 0.2s ease;
   font-weight: 400;
-  text-transform: uppercase;
   display: inline-flex;
   align-items: center;
   width: fit-content;
