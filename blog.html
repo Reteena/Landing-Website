@@ -20,7 +20,7 @@
   <div class="neurips-banner" id="neurips-banner">
     <div class="announcement-content">
       <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
-      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">Ã—</button>
     </div>
   </div>
 
@@ -57,7 +57,11 @@
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
-          <a href="/cdn-cgi/l/email-protection#e189848d8d8ea193849584848f80cf8e9386" class="menu-link">Contact</a>
+          <a href="about.html" class="menu-link">About</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
           <div class="menu-divider"></div>
         </div>
       </nav>
@@ -94,6 +98,7 @@
               <h3 class="footer-column-header">Company</h3>
               <a href="index.html" class="footer-link">Home</a>
               <a href="blog.html" class="footer-link">Blog</a>
+              <a href="about.html" class="footer-link">About</a>
             </div>
             
             <div class="footer-column">
@@ -105,7 +110,7 @@
         </div>
         
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 Copyright. All Rights Reserved.</p>
+          <p class="footer-copyright">Â© 2026 Copyright. All Rights Reserved.</p>
         </div>
       </footer>
     </main>
@@ -118,7 +123,7 @@
     </filter>
   </svg>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Close banner function
     function closeBanner() {
       const banner = document.getElementById('neurips-banner');
@@ -183,7 +188,7 @@
               <p class="blog-post-description">${post.description}</p>
               <div class="blog-post-meta">
                 <span class="blog-post-category">${post.category.charAt(0).toUpperCase() + post.category.slice(1)}</span>
-                <span class="blog-post-separator">·</span>
+                <span class="blog-post-separator">Â·</span>
                 <span class="blog-post-date">${post.date}</span>
               </div>
             </a>
@@ -231,4 +236,11 @@
       
       // Close menu with Escape key
       document.addEventListener('keydown', (e) => {
-        i
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
