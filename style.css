@@ -290,9 +290,9 @@ html {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 40%;
+  width: 45%;
   pointer-events: none;
-  opacity: 0.3;
+  opacity: 0.5;
   animation: chromaShift 8s ease-in-out infinite;
 }
 
@@ -300,10 +300,10 @@ html {
   left: 0;
   background: linear-gradient(
     90deg,
-    rgba(255, 240, 220, 0.25) 0%,
-    rgba(255, 230, 240, 0.2) 25%,
-    rgba(240, 230, 255, 0.15) 50%,
-    rgba(230, 240, 255, 0.1) 75%,
+    rgba(255, 220, 180, 0.6) 0%,
+    rgba(255, 200, 220, 0.5) 25%,
+    rgba(220, 200, 255, 0.4) 50%,
+    rgba(200, 220, 255, 0.3) 75%,
     transparent 100%
   );
 }
@@ -312,10 +312,10 @@ html {
   right: 0;
   background: linear-gradient(
     270deg,
-    rgba(230, 255, 240, 0.25) 0%,
-    rgba(240, 255, 230, 0.2) 25%,
-    rgba(255, 245, 230, 0.15) 50%,
-    rgba(255, 235, 240, 0.1) 75%,
+    rgba(200, 255, 220, 0.6) 0%,
+    rgba(220, 255, 200, 0.5) 25%,
+    rgba(255, 230, 200, 0.4) 50%,
+    rgba(255, 210, 220, 0.3) 75%,
     transparent 100%
   );
   animation-delay: -4s;
@@ -323,20 +323,20 @@ html {
 
 @keyframes chromaShift {
   0%, 100% {
-    opacity: 0.3;
+    opacity: 0.5;
     filter: hue-rotate(0deg);
   }
   25% {
-    opacity: 0.35;
-    filter: hue-rotate(10deg);
+    opacity: 0.6;
+    filter: hue-rotate(15deg);
   }
   50% {
-    opacity: 0.25;
-    filter: hue-rotate(20deg);
+    opacity: 0.4;
+    filter: hue-rotate(25deg);
   }
   75% {
-    opacity: 0.35;
-    filter: hue-rotate(10deg);
+    opacity: 0.6;
+    filter: hue-rotate(15deg);
   }
 }
 
